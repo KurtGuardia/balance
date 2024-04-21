@@ -1,5 +1,37 @@
 @import './variables.scss';
+@import './fonts.css';
 
 .header {
     background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 11px 10px #a38b93;
+
+    &_logo {
+        @include flex;
+        gap: 15px;
+
+        & svg {
+            width: 50px;
+            height: auto;
+
+            & g {
+                fill: $secondary-color;
+            }
+        }
+
+        &-name {
+            font-family: 'Brown Sugar', 'Segoe Script', 'Segoe UI', 'Tahoma', 'Verdana', 'Courier New', cursive;
+            color: $secondary-color;
+            font-weight: bold
+        }
+    }
+
+    & ul {
+        @include flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 80%;
+    }
 }

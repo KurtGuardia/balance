@@ -2,12 +2,16 @@
 @import 'fonts';
 
 .landing {
-    font-family: 'Brown Sugar', sans-serif;
-    font-size: 50px;
+    &_hero {
+        font-family: 'Brown Sugar', 'Segoe Script', 'Segoe UI', 'Tahoma', 'Verdana', 'Courier New', cursive;
+    }
+
+    font-size: 24px;
 }
 
 html,
 body {
+    font-family: 'Literaturnaya', 'Times New Roman', 'Garamond', 'Georgia', 'Merriweather', 'Playfair Display', 'Baskerville', 'Bookman Old Style', 'Century Schoolbook', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
