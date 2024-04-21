@@ -2,11 +2,19 @@
 @import './fonts.css';
 
 .header {
+    position: relative;
     background-color: $primary-color;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    box-shadow: 0px 11px 10px #a38b93;
+    box-shadow: 0px 11px 10px $secondary-color;
+    transition: all 0.5s ease-in;
+
+    &.sticky {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
 
     &_logo {
         @include flex;
@@ -33,5 +41,10 @@
         justify-content: space-around;
         list-style: none;
         width: 80%;
+        color: $secondary-color;
+
+        & li {
+            cursor: pointer;
+        }
     }
 }
