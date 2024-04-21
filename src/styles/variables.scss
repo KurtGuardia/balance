@@ -1,0 +1,21 @@
+// Colors
+$primary-color: #92A28E;
+$secondary-color: #F6F6EA;
+$cta-color: #a38b93;
+$light-green: #ccd2ae;
+$white: #fcfbf9;
+$beige: #efece5;
+
+// Breakpoints
+$sm: 420px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1600px;
+
+// Mixins
+@mixin bp($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
