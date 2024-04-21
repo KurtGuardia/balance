@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('../fonts/LiteraturnayaBold.eot');
+    src: local('Literaturnaya Bold'), local('LiteraturnayaBold'),
+        url('../fonts/LiteraturnayaBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaBold.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaBold.woff') format('woff'),
+        url('../fonts/LiteraturnayaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('../fonts/LiteraturnayaRegular.eot');
+    src: local('Literaturnaya Regular'), local('LiteraturnayaRegular'),
+        url('../fonts/LiteraturnayaRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaRegular.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaRegular.woff') format('woff'),
+        url('../fonts/LiteraturnayaRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LiteraturnayaC';
+    src: url('../fonts/LiteraturnayaC.eot');
+    src: local('LiteraturnayaC'),
+        url('../fonts/LiteraturnayaC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaC.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaC.woff') format('woff'),
+        url('../fonts/LiteraturnayaC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LiteraturnayaC';
+    src: url('../fonts/LiteraturnayaC-Italic.eot');
+    src: local('LiteraturnayaC Italic'), local('LiteraturnayaC-Italic'),
+        url('../fonts/LiteraturnayaC-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaC-Italic.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaC-Italic.woff') format('woff'),
+        url('../fonts/LiteraturnayaC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LiteraturnayaC';
+    src: url('../fonts/LiteraturnayaC-Bold.eot');
+    src: local('LiteraturnayaC Bold'), local('LiteraturnayaC-Bold'),
+        url('../fonts/LiteraturnayaC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaC-Bold.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaC-Bold.woff') format('woff'),
+        url('../fonts/LiteraturnayaC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('../fonts/LiteraturnayaItalic.eot');
+    src: local('Literaturnaya Italic'), local('LiteraturnayaItalic'),
+        url('../fonts/LiteraturnayaItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaItalic.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaItalic.woff') format('woff'),
+        url('../fonts/LiteraturnayaItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('../fonts/LiteraturnayaBoldItalic.eot');
+    src: local('Literaturnaya Bold Italic'), local('LiteraturnayaBoldItalic'),
+        url('../fonts/LiteraturnayaBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaBoldItalic.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaBoldItalic.woff') format('woff'),
+        url('../fonts/LiteraturnayaBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LiteraturnayaC';
+    src: url('../fonts/LiteraturnayaC-BoldItalic.eot');
+    src: local('LiteraturnayaC Bold Italic'), local('LiteraturnayaC-BoldItalic'),
+        url('../fonts/LiteraturnayaC-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LiteraturnayaC-BoldItalic.woff2') format('woff2'),
+        url('../fonts/LiteraturnayaC-BoldItalic.woff') format('woff'),
+        url('../fonts/LiteraturnayaC-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown Sugar';
+    src: url('../fonts/Brown\ Sugar.ttf') format('truetype'),
+        url('../fonts/Brown\ Sugar.otf') format('opentype');
+}
