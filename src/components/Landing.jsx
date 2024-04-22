@@ -6,9 +6,30 @@ import Me from './Me'
 import Services from './Services'
 import Process from './Process'
 import Contact from './Contact'
-import { motion } from 'framer-motion'
+import {
+  motion,
+  useScroll,
+  useTransform,
+} from 'framer-motion'
 
 export default function Landing() {
+  const { scrollYProgress } = useScroll()
+  const scale = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [0.7, 1, 1],
+  )
+  const opacity = useTransform(
+    scrollYProgress,
+    [0, 0.4, 0.5, 1],
+    [0, 0.25, 1, 1],
+  )
+  const y = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    ['150%', '0%', '0%'],
+  )
+
   const logoAnimation = {
     animateColor: {
       fill: [
@@ -38,6 +59,7 @@ export default function Landing() {
       },
     },
   }
+
   return (
     <div className='landing'>
       <Header />
@@ -67,19 +89,27 @@ export default function Landing() {
           Nutrición Integrativa
         </h2>
       </div>
-      <div className='landing_desc'>
-        <p>
+      <div className='landing_content'>
+        <motion.p
+          style={{
+            opacity,
+            scale,
+            y,
+            transition: 'all 1s ease-out',
+          }}
+          className='landing_content-desc'
+        >
           Atención nutricional personalizada, tomando en
           cuenta la influencia de la alimentación en la
           salud física, emocional y mental; y su relación
           con la microbiota intestinal.
-        </p>
+        </motion.p>
+        <Integrativa />
+        <Me />
+        <Services />
+        <Process />
+        <Contact />
       </div>
-      <Integrativa />
-      <Me />
-      <Services />
-      <Process />
-      <Contact />
     </div>
   )
 }
