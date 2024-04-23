@@ -1,6 +1,5 @@
 import { ReactComponent as Logo } from '../imgs/logo.svg'
 import '../styles/landing.scss'
-import Header from './Header'
 import Integrativa from './Integrativa'
 import Me from './Me'
 import Services from './Services'
@@ -62,7 +61,6 @@ export default function Landing() {
 
   return (
     <div className='landing'>
-      <Header />
       <div className='landing_hero'>
         <motion.div
           className='landing_hero_img'
