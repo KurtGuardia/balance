@@ -15,17 +15,17 @@ export default function Landing() {
   const { scrollYProgress } = useScroll()
   const scale = useTransform(
     scrollYProgress,
-    [0, 0.5, 1],
+    [0, 0.2, 0.5],
     [0.7, 1, 1],
   )
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.4, 0.5, 1],
-    [0, 0.25, 1, 1],
+    [0, 0.2, 0.5],
+    [0, 1, 1],
   )
   const y = useTransform(
     scrollYProgress,
-    [0, 0.5, 1],
+    [0, 0.2, 0.5],
     ['150%', '0%', '0%'],
   )
 

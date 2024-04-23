@@ -1,5 +1,45 @@
 @import './variables.scss';
 
-.integrativa {
-    background-color: $secondary-color;
+.landing_content_integrativa {
+    &-title {
+        font-size: 42px;
+        font-family: $Brown;
+        margin: 250px;
+    }
+
+    &-grid {
+        display: grid;
+        grid-gap: 120px;
+
+        &-pair {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+            &>* {
+                width: 80%;
+            }
+
+            &--text {
+                grid-column: 2;
+                font-size: 36px;
+            }
+
+            &--img {
+                grid-column: 1;
+                border-radius: 15px;
+            }
+        }
+
+        &-pair:nth-child(even) {
+            .landing_content_integrativa-grid-pair--text {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .landing_content_integrativa-grid-pair--img {
+                grid-column: 2;
+            }
+        }
+    }
 }
