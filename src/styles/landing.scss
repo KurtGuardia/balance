@@ -4,7 +4,7 @@
 .landing {
     &_hero {
         position: relative;
-        height: 85vh;
+        height: 95vh;
         @include flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -99,6 +99,11 @@ body {
         &-track {
             background-color: $white;
         }
+    }
+
+    ::selection {
+        background-color: $light-green;
+        color: $cta-color;
     }
 
 }
