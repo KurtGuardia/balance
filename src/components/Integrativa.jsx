@@ -20,8 +20,8 @@ export default function Integrativa() {
             alt='Yoga, Nutricion, bienestar, estilo de vida'
           />
           <p className='landing_content_integrativa-grid-pair--text'>
-            Tiene un enfoque holístico que combina los
-            principios de la nutrición y aspectos
+            Tiene un enfoque <b>holístico</b> que combina
+            los principios de la nutrición y aspectos
             fundamentales del estilo de vida. Es una forma
             de abordar la alimentación y el bienestar que
             considera no solo los aspectos físicos, sino
@@ -37,10 +37,10 @@ export default function Integrativa() {
           <p className='landing_content_integrativa-grid-pair--text'>
             Desde esta perspectiva se reconoce que los
             alimentos no solo nutren nuestro cuerpo, sino
-            también nuestra mente y emociones, examinando
-            cómo las emociones pueden afectar nuestras
-            elecciones alimentarias y viceversa. Y como esto
-            rige nuestro estilo de vida.
+            también <b>nuestra mente y emociones</b>,
+            examinando cómo las emociones pueden afectar
+            nuestras elecciones alimentarias y viceversa. Y
+            como esto rige nuestro estilo de vida.
           </p>
         </li>
         <li className='landing_content_integrativa-grid-pair'>
@@ -51,8 +51,9 @@ export default function Integrativa() {
           />
           <p className='landing_content_integrativa-grid-pair--text'>
             Se centra en ofrecer pautas de alimentación
-            personalizadas, con el objetivo de lograr un
-            estado de salud óptimo y prevenir enfermedades.
+            <b>personalizadas</b>, con el objetivo de lograr
+            un estado de salud óptimo y prevenir
+            enfermedades.
           </p>
         </li>
         <li className='landing_content_integrativa-grid-pair'>
@@ -63,8 +64,8 @@ export default function Integrativa() {
           />
           <p className='landing_content_integrativa-grid-pair--text'>
             Este enfoque busca empoderar a las personas para
-            que tomen el control de su alimentación y estilo
-            de vida, promoviendo cambios duraderos y
+            que <b>tomen el control</b> de su alimentación y
+            estilo de vida, promoviendo cambios duraderos y
             verdaderos en su salud.
           </p>
         </li>
@@ -83,9 +84,9 @@ export default function Integrativa() {
             y está en constante comunicación con el cerebro
             a través de un eje conocido como el eje
             intestino-cerebro, por lo que si cuidamos el
-            intestino también estamos cuidando la salud
-            mental y emocional y lo mismo ocurre a la
-            inversa.
+            intestino también estamos{' '}
+            <b>cuidando la salud mental y emocional</b>. Lo
+            mismo ocurre a la inversa.
           </p>
         </li>
         <li className='landing_content_integrativa-grid-pair'>
@@ -95,9 +96,9 @@ export default function Integrativa() {
             alt=''
           />
           <p className='landing_content_integrativa-grid-pair--text'>
-            Promueve ser conscientes con los alimentos que
-            escogemos y en nuestra actividad diaria,
-            cultivando una relación más profunda con
+            Promueve <b>ser conscientes</b> con los
+            alimentos que escogemos y en nuestra actividad
+            diaria, cultivando una relación más profunda con
             nosotros mismos y el mundo que nos rodea.
           </p>
         </li>
