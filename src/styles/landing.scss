@@ -46,6 +46,8 @@
     }
 
     &_content {
+        background-color: $secondary-color;
+
         position: relative;
         @include flex;
         align-items: unset;
