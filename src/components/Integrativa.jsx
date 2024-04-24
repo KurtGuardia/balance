@@ -51,8 +51,8 @@ export default function Integrativa() {
           />
           <p className='landing_content_integrativa-grid-pair--text'>
             Se centra en ofrecer pautas de alimentación
-            <b>personalizadas</b>, con el objetivo de lograr
-            un estado de salud óptimo y prevenir
+            <b> personalizadas</b>, con el objetivo de
+            lograr un estado de salud óptimo y prevenir
             enfermedades.
           </p>
         </li>

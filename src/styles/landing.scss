@@ -90,6 +90,14 @@ body {
         margin: 0;
     }
 
+    h2 {
+        color: $cta-color;
+        letter-spacing: 4px;
+        font-family: $Brown;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
     ::-webkit-scrollbar {
         width: 20px;
 
