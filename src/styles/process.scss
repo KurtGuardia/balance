@@ -1,5 +1,45 @@
 @import './variables.scss';
 
 .process {
-    background-color: $light-green;
+    &_title {
+        margin: 80px;
+    }
+
+    & ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    &_step {
+        cursor: pointer;
+        width: 45%;
+        padding: 10px 30px;
+
+        &.box {
+            box-shadow: 2px 5px 15px $cta-color;
+
+            .process_step-title {
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+
+        &-title {
+            padding: 10px 30px;
+            box-shadow: 2px 5px 15px $cta-color;
+            margin: 0;
+
+            &-num {
+                font-size: 38px;
+                color: $primary-color;
+                background-color: $beige;
+                border-radius: 50%;
+                padding: 3px 12px;
+                margin-right: 15px;
+            }
+        }
+    }
+
 }
