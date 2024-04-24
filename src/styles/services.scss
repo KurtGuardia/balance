@@ -1,5 +1,23 @@
 @import './variables.scss';
 
 .services {
-    background-color: $beige;
+    &_title {
+        margin-left: 80px;
+    }
+
+    & ul {
+        @include flex;
+        align-items: stretch;
+        gap: 20px;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+    }
+
+    &_service {
+        background-color: $beige;
+        border-radius: 25px;
+        padding: 30px;
+        width: 20%;
+    }
 }
