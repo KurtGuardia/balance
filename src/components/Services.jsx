@@ -12,7 +12,7 @@ export default function Services() {
             Metabolismo
           </h3>
           <p className='services_service-text'>
-            Si tienes <b>alguna condición o enfermedad</b>
+            Si tienes <b>alguna condición o enfermedad </b>
             que deseas mejorar: Sobre peso, Diabetes,
             resistencia a la insulina, Síndrome de Ovario
             Poliquístico (SOP), Hipertensión, triglicéridos
@@ -36,8 +36,8 @@ export default function Services() {
           </h3>
           <p className='services_service-text'>
             Si lo que estas buscando es
-            <b>mejorar tus hábitos</b>y estilo de vida estas
-            en el lugar correcto.
+            <b> mejorar tus hábitos</b>y estilo de vida
+            estas en el lugar correcto.
           </p>
         </li>
         <li className='services_service'>
@@ -46,7 +46,7 @@ export default function Services() {
           </h3>
           <p className='services_service-text'>
             Si has escogido un estilo de vida
-            <b>libre de productos animales</b> y necesitas
+            <b> libre de productos animales</b> y necesitas
             orientación en que alimentos escoger y como
             combinarlos para tener un aporte adecuado de
             nutrientes, esto es para ti.
