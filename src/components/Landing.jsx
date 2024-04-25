@@ -48,13 +48,20 @@ export default function Landing() {
       },
     },
     animanteBounce: {
-      y: ['0%', '5%'],
+      y: ['0%', '4%'],
       transition: {
         duration: 1,
         ease: 'easeOut',
         repeat: Infinity,
         repeatType: 'reverse',
       },
+    },
+  }
+  const animateRotation = {
+    rotation: ['0deg', '10deg'],
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut',
     },
   }
   const currentDate = new Date()
@@ -69,15 +76,7 @@ export default function Landing() {
         <motion.div
           className='landing_hero_img'
           initial={{ y: 0 }}
-          animate={{
-            y: ['0%', '4%'],
-            transition: {
-              duration: 2,
-              ease: 'easeInOut',
-              repeat: Infinity,
-              repeatType: 'reverse',
-            },
-          }}
+          animate={logoAnimation.animanteBounce}
         >
           <motion.div
             initial={{ fill: '#92A28E' }}
@@ -116,16 +115,21 @@ export default function Landing() {
         <p className='landing_footer-date'>
           Updated: {month}, {year}
         </p>
-        <p className='landing_footer-dev'>
-          Developed by:{' '}
-          <a
-            href='https://www.kurtguardia.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Kurt Guardia
-          </a>
-        </p>
+        <div
+          className='landing_footer-dev'
+          whileTap={{ rotate: '100deg' }}
+        >
+          <p>Developed by:</p>
+          <motion.div whileHover={{ rotate: '-10deg' }}>
+            <a
+              href='https://www.kurtguardia.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Kurt Guardia
+            </a>
+          </motion.div>
+        </div>
         <p className='landing_footer-copy'>
           &copy; All rights reserved
         </p>
