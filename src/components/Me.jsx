@@ -8,7 +8,7 @@ export default function Me() {
     useState(false)
 
   return (
-    <div className='me'>
+    <div className='me' id='me'>
       <img src={vic} alt='Foto de Victoria Espada' />
       <div className='me_content'>
         <h2>Sobre mí</h2>

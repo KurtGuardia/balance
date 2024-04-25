@@ -47,9 +47,9 @@
 
     &_content {
         background-color: $secondary-color;
-
         position: relative;
         @include flex;
+        gap: 200px;
         align-items: unset;
         flex-direction: column;
 
@@ -78,15 +78,24 @@
     &_footer {
         @include flex;
         justify-content: space-between;
-        padding: 8px 35px;
+        padding: 8px 50px;
         background-color: $cta-color;
         color: $white;
 
         &-dev {
             font-weight: bold;
 
+            &:hover {
+                & a {
+                    font-family: $Brown;
+                    color: $beige;
+                }
+            }
+
             & a {
-                color: $beige;
+                width: 120%;
+                text-decoration: none;
+                color: $light-green;
                 letter-spacing: 2px;
             }
         }
