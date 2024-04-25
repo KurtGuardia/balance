@@ -28,7 +28,6 @@ export default function Landing() {
     [0, 0.2, 0.5],
     ['150%', '0%', '0%'],
   )
-
   const logoAnimation = {
     animateColor: {
       fill: [
@@ -58,6 +57,11 @@ export default function Landing() {
       },
     },
   }
+  const currentDate = new Date()
+  const month = currentDate.toLocaleString('default', {
+    month: 'long',
+  })
+  const year = currentDate.getFullYear()
 
   return (
     <div className='landing'>
@@ -107,6 +111,24 @@ export default function Landing() {
         <Services />
         <Process />
         <Contact />
+      </div>
+      <div className='landing_footer'>
+        <p className='landing_footer-date'>
+          Updated: {month}, {year}
+        </p>
+        <p className='landing_footer-dev'>
+          Developed by:{' '}
+          <a
+            href='https://www.kurtguardia.com'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Kurt Guardia
+          </a>
+        </p>
+        <p className='landing_footer-copy'>
+          &copy; All rights reserved
+        </p>
       </div>
     </div>
   )

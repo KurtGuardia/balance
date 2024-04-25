@@ -74,6 +74,23 @@
             letter-spacing: 3px;
         }
     }
+
+    &_footer {
+        @include flex;
+        justify-content: space-between;
+        padding: 8px 35px;
+        background-color: $cta-color;
+        color: $white;
+
+        &-dev {
+            font-weight: bold;
+
+            & a {
+                color: $beige;
+                letter-spacing: 2px;
+            }
+        }
+    }
 }
 
 html,
