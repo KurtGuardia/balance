@@ -7,11 +7,16 @@
 
     & ul {
         @include flex;
+        flex-wrap: wrap;
         align-items: stretch;
         gap: 50px;
         width: 100%;
         list-style: none;
         padding: 0;
+
+        @include bp($xxl) {
+            gap: 30px;
+        }
     }
 
     &_service {
@@ -19,5 +24,9 @@
         border-radius: 25px;
         padding: 30px;
         width: 18%;
+
+        @include bp($xl) {
+            width: 35%;
+        }
     }
 }
