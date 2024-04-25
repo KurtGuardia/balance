@@ -64,7 +64,7 @@ export default function Landing() {
   const year = currentDate.getFullYear()
 
   return (
-    <div className='landing'>
+    <div className='landing' id='top'>
       <div className='landing_hero'>
         <motion.div
           className='landing_hero_img'

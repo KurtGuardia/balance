@@ -8,7 +8,7 @@ export default function Process() {
   const [step4Open, setStep4Open] = useState(false)
 
   return (
-    <div className='process'>
+    <div className='process' id='process'>
       <h2 className='process_title'>El proceso</h2>
       <ul>
         <li

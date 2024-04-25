@@ -35,7 +35,7 @@ export default function Contact() {
   }
 
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <h2 className='contact_title'>
         Atención Nutricional Personalizada <br />
         Consulta Privada Online
@@ -58,7 +58,7 @@ export default function Contact() {
 '
           target='_blank'
           rel='noreferrer'
-          title='Click y mandame un mensaje en Whatsapp'
+          title='Click y envíame un mensaje en Whatsapp'
           className='conctact_options-whatsapp'
         >
           (+34) 634 150 027
@@ -80,7 +80,7 @@ export default function Contact() {
 '
           target='_blank'
           rel='noreferrer'
-          title='Click y mandame un email'
+          title='Click y envíame un email'
           className='conctact_options-mail'
         >
           balancenutricionintegrativa@gmail.com

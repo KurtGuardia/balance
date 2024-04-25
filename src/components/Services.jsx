@@ -2,7 +2,7 @@ import '../styles/services.scss'
 
 export default function Services() {
   return (
-    <div className='services'>
+    <div className='services' id='services'>
       <h2 className='services_title'>
         En que puedo ayudarte:
       </h2>
