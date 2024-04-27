@@ -3,6 +3,10 @@
 .services {
     &_title {
         margin-left: 80px;
+
+        @include bp($sm) {
+            margin-left: 10px;
+        }
     }
 
     & ul {
@@ -27,6 +31,11 @@
 
         @include bp($xl) {
             width: 35%;
+        }
+
+        @include bp($xl) {
+            width: 75%;
+            padding: 20px;
         }
     }
 }

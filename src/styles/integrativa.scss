@@ -5,7 +5,11 @@
         margin: 80px;
 
         @include bp($md) {
-            margin: 0 40px;
+            margin: 0 50px;
+        }
+
+        @include bp($sm) {
+            margin: 0 30px;
         }
     }
 
@@ -15,7 +19,12 @@
 
         @include bp($md) {
             gap: 50px;
-            padding: 0;
+        }
+
+        @include bp($sm) {
+            text-align: center;
+            gap: 20px;
+            padding-left: 0;
         }
 
         &-pair {
@@ -27,6 +36,7 @@
 
             @include bp($md) {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
 
             &>* {
@@ -45,12 +55,16 @@
                 grid-column: 2;
                 font-size: 36px;
 
+                @include bp($xl) {
+                    font-size: 24px;
+                }
+
                 @include bp($md) {
                     grid-row: 1;
                 }
 
-                @include bp($xl) {
-                    font-size: 24px;
+                @include bp($sm) {
+                    font-size: 18px;
                 }
             }
 
