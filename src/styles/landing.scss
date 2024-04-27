@@ -10,6 +10,10 @@
         justify-content: space-evenly;
         font-family: $Brown;
 
+        @include bp($xl) {
+            height: 90vh;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -40,8 +44,12 @@
 
         &_subtitle {
             font-family: $Lit;
-            font-size: 42px;
             color: $primary-color;
+
+            @include bp($lg) {
+                margin: 0
+            }
+
         }
     }
 
@@ -55,6 +63,10 @@
 
         @include bp($xl) {
             gap: 100px;
+        }
+
+        @include bp($lg) {
+            gap: 80px;
         }
 
         &::before {
@@ -76,6 +88,10 @@
             font-size: 38px;
             line-height: 200%;
             letter-spacing: 3px;
+
+            @include bp($lg) {
+                font-size: 32px;
+            }
         }
     }
 
@@ -86,10 +102,24 @@
         background-color: $cta-color;
         color: $white;
 
+        @include bp($lg) {
+            padding: 0 20px;
+        }
+
+        @include bp($md) {
+            flex-direction: column
+        }
+
         &-dev {
             @include flex;
             gap: 10px;
             font-weight: bold;
+
+            @include bp($md) {
+                & p {
+                    margin: 0;
+                }
+            }
 
             &:hover {
                 & a {
@@ -131,6 +161,10 @@ body {
 
         @include bp($xl) {
             font-size: 42px;
+        }
+
+        @include bp($lg) {
+            font-size: 32px;
         }
     }
 
