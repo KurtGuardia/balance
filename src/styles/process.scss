@@ -10,12 +10,25 @@
         display: flex;
         gap: 50px;
         flex-wrap: wrap;
+
+        @include bp($md) {
+            flex-direction: column;
+        }
     }
 
     &_step {
         cursor: pointer;
         width: 42%;
         padding: 10px 30px;
+
+        @include bp($lg) {
+            padding: 0;
+        }
+
+        @include bp($md) {
+            width: 65%;
+            margin: auto;
+        }
 
         &.box {
             box-shadow: 2px 5px 15px $cta-color;
@@ -36,6 +49,10 @@
                 font-size: 24px;
             }
 
+            @include bp($lg) {
+                font-size: 22px;
+            }
+
             &-num {
                 font-size: 38px;
                 color: $primary-color;
@@ -47,6 +64,11 @@
                 @include bp($xl) {
                     margin-right: 10px;
                     font-size: 30px;
+                }
+
+                @include bp($lg) {
+                    font-size: 24px;
+                    padding: 5px 10px;
                 }
             }
         }
