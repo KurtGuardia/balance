@@ -7,12 +7,19 @@
 
     @include bp($lg) {
         flex-direction: column-reverse;
-        padding: 0 50px;
+    }
+
+    @include bp($sm) {
+        padding: 0;
     }
 
     & img {
         width: 35%;
-        border-radius: 25px
+        border-radius: 25px;
+
+        @include bp($sm) {
+            width: 50%;
+        }
     }
 
     &_content {
@@ -23,6 +30,10 @@
 
         @include bp($xl) {
             gap: 0;
+        }
+
+        @include bp($sm) {
+            padding: 0 20px;
         }
 
         &_area {
@@ -41,6 +52,10 @@
 
                 @include bp($xl) {
                     font-size: 24px;
+                }
+
+                @include bp($sm) {
+                    font-size: 20px;
                 }
             }
 

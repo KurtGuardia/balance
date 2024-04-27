@@ -14,6 +14,10 @@
             height: 90vh;
         }
 
+        @include bp($sm) {
+            height: 100vh;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -26,6 +30,10 @@
 
         &_img {
             width: 40%;
+
+            @include bp($sm) {
+                width: 80%;
+            }
 
             & svg {
                 width: 100%;
@@ -40,6 +48,11 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @include bp($md) {
+                font-size: 50px;
+            }
+
         }
 
         &_subtitle {
@@ -69,6 +82,10 @@
             gap: 80px;
         }
 
+        @include bp($sm) {
+            gap: 50px;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -91,6 +108,13 @@
 
             @include bp($lg) {
                 font-size: 32px;
+            }
+
+            @include bp($sm) {
+                margin: 80px 10px;
+                font-size: 22px;
+                line-height: 150%;
+                letter-spacing: 1px;
             }
         }
     }
@@ -147,6 +171,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 
+    @include bp($sm) {
+        font-size: 18px;
+    }
+
     h1,
     h2 {
         margin: 0;
@@ -165,6 +193,12 @@ body {
 
         @include bp($lg) {
             font-size: 32px;
+        }
+
+        @include bp($sm) {
+            font-size: 28px;
+            letter-spacing: 1px;
+            line-height: 120%;
         }
     }
 

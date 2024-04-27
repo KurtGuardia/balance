@@ -11,8 +11,16 @@
         padding: 30px 0 60px;
     }
 
+    @include bp($sm) {
+        padding: 0;
+    }
+
     &_title {
         text-align: center;
+
+        @include bp($sm) {
+            padding: 20px;
+        }
     }
 
     &_options {
@@ -33,6 +41,13 @@
             text-decoration: none;
             color: inherit;
             padding: 0 15px;
+
+            @include bp($sm) {
+                font-size: 20px;
+                line-break: anywhere;
+                padding: 0 10px;
+
+            }
 
             &:visited {
                 color: inherit;
@@ -58,6 +73,10 @@
             @include bp($lg) {
                 width: 100%
             }
+
+            @include bp($sm) {
+                // width: auto;
+            }
         }
 
     }
@@ -78,12 +97,23 @@
             font-size: 25px;
         }
 
+        @include bp($sm) {
+            flex-direction: column;
+            font-size: 18px;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
         &-logo {
             margin: 0 20px;
 
             & svg {
                 width: 50px;
                 height: auto;
+
+                @include bp($sm) {
+                    width: 30px;
+                }
             }
         }
     }

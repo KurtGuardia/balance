@@ -3,6 +3,10 @@
 .process {
     &_title {
         margin: 80px;
+
+        @include bp($sm) {
+            margin: 40px;
+        }
     }
 
     & ul {
@@ -11,8 +15,16 @@
         gap: 50px;
         flex-wrap: wrap;
 
+        @include bp($lg) {
+            gap: 20px;
+        }
+
         @include bp($md) {
             flex-direction: column;
+        }
+
+        @include bp($sm) {
+            padding-left: 0;
         }
     }
 
@@ -22,11 +34,17 @@
         padding: 10px 30px;
 
         @include bp($lg) {
-            padding: 0;
+            width: 45%;
+            padding: 10px;
         }
 
         @include bp($md) {
             width: 65%;
+            margin: auto;
+        }
+
+        @include bp($sm) {
+            width: 85%;
             margin: auto;
         }
 
@@ -49,8 +67,8 @@
                 font-size: 24px;
             }
 
-            @include bp($lg) {
-                font-size: 22px;
+            @include bp($sm) {
+                font-size: 18px;
             }
 
             &-num {
@@ -69,6 +87,12 @@
                 @include bp($lg) {
                     font-size: 24px;
                     padding: 5px 10px;
+                }
+
+                @include bp($sm) {
+                    font-size: 14px;
+                    margin-right: 5px;
+                    padding: 3px 6px;
                 }
             }
         }
