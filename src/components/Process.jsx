@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/process.scss'
 import { motion } from 'framer-motion'
+import { ReactComponent as Dropdown } from '../imgs/dropdown.svg'
 
 export default function Process() {
   const [openStep, setOpenStep] = useState({})
@@ -51,6 +52,9 @@ export default function Process() {
                 {index + 1}
               </span>
               {step.title}
+              <span className='process_step-title-svg'>
+                <Dropdown />
+              </span>
             </h3>
             {openStep[index] && (
               <p

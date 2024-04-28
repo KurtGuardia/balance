@@ -45,7 +45,7 @@
                 padding: 10px 0;
             }
 
-            & h3 {
+            &-title {
                 border-bottom: 1px solid $primary-color;
                 font-weight: bold;
                 margin: 0;
@@ -58,6 +58,10 @@
 
                 @include bp($sm) {
                     font-size: 20px;
+                }
+
+                &-svg {
+                    padding-left: 20px;
                 }
             }
 
