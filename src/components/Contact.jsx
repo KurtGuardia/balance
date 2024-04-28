@@ -2,6 +2,7 @@ import '../styles/contact.scss'
 import { ReactComponent as Logo } from '../imgs/logo.svg'
 import { motion } from 'framer-motion'
 import yoga from '../imgs/yoga.png'
+import { ReactComponent as Whatsapp } from '../imgs/whatsapp.svg'
 
 export default function Contact() {
   const logoAnimation = {
@@ -61,6 +62,9 @@ export default function Contact() {
           title='Click y envíame un mensaje en Whatsapp'
           className='conctact_options-whatsapp'
         >
+          <span className='contact_options'>
+            <Whatsapp />
+          </span>{' '}
           (+34) 634 150 027
         </motion.a>
         <motion.a

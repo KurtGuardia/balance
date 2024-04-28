@@ -37,6 +37,8 @@
         }
 
         & a {
+            @include flex;
+            gap: 10px;
             z-index: 10;
             text-decoration: none;
             color: inherit;
@@ -57,8 +59,6 @@
                 outline: 2px solid $cta-color;
             }
         }
-
-        &-whatsapp {}
 
         &-bgImg {
             position: absolute;

@@ -2,6 +2,7 @@ import '../styles/me.scss'
 import vic from '../imgs/Victoria.jpg'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { ReactComponent as Dropdown } from '../imgs/dropdown.svg'
 
 export default function Me() {
   const [pnieOpen, setPnieOpen] = useState(false)
@@ -44,6 +45,9 @@ export default function Me() {
             onClick={() => setPnieOpen(!pnieOpen)}
           >
             La Psiconeuroinmunoendocrinología (PNIE):
+            <span className='me_content_area-title-svg'>
+              <Dropdown />
+            </span>
           </h3>
           {pnieOpen && (
             <p className='me_content_area-text'>
@@ -70,6 +74,9 @@ export default function Me() {
             }
           >
             La Microbiota intestinal:
+            <span className='me_content_area-title-svg'>
+              <Dropdown />
+            </span>
           </h3>
           {microbiotaOpen && (
             <p className='me_content_area-text'>
