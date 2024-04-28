@@ -89,17 +89,18 @@ export default function Me() {
               de neurotransmisores siendo un factor clave en
               el estado de salud físico, mental y emocional,
               pilares fundamentales del bienestar de todo
-              ser humano. <br />
-              El combinar e integrar la nutrición con estas
-              áreas nos da la posibilidad de abordar la
-              salud de una manera más holística apoyándonos
-              en una alimentación y estilo de vida
-              consiente. <br />
-              Consciente con nosotros mismos y con nuestro
-              entorno.
+              ser humano.
             </p>
           )}
         </div>
+        <p>
+          El combinar e integrar la nutrición con estas
+          áreas nos da la posibilidad de abordar la salud de
+          una manera más holística apoyándonos en una
+          alimentación y estilo de vida consiente. <br />
+          Consciente con nosotros mismos y con nuestro
+          entorno.
+        </p>
         <p className='me_content_msg'>
           “Te proporciono herramientas y estrategias para
           ser dueño de tu salud y te acompaño en el proceso
