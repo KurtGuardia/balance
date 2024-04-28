@@ -14,7 +14,7 @@
             height: 90vh;
         }
 
-        @include bp($sm) {
+        @include bp($md) {
             height: 100vh;
         }
 
@@ -29,7 +29,11 @@
         }
 
         &_img {
-            width: 40%;
+            width: 35%;
+
+            @include bp($md) {
+                width: 70%;
+            }
 
             @include bp($sm) {
                 width: 80%;
@@ -206,7 +210,7 @@ body {
         width: 20px;
 
         &-thumb {
-            background-color: $light-green;
+            background-color: $cta-color;
             border-radius: 10px;
         }
 

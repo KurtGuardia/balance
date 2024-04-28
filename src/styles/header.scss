@@ -2,7 +2,6 @@
 @import './fonts.css';
 
 .header {
-    position: relative;
     background-color: $primary-color;
     display: flex;
     justify-content: space-between;
@@ -10,14 +9,41 @@
     box-shadow: 0px 11px 10px $secondary-color;
     transition: all 0.5s ease-in;
 
-    //TODO:
-    @include bp ($sm) {
-        display: none;
+    @include bp($md) {
+        position: fixed;
+        top: -60%;
+        right: -50%;
+        width: 80%;
+        height: 90%;
+        z-index: 99;
+        border-radius: 50%;
+        padding: 180px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    @include bp($sm) {
+        font-size: 24px;
+        gap: 15px;
+        top: -30%;
+        right: -50%;
+        width: 90%;
+        height: 60%;
+        padding: 80px;
     }
 
     & a {
         text-decoration: none;
         color: $secondary-color;
+
+        @include bp($md) {
+            padding-left: 80px;
+        }
+
+        @include bp($sm) {
+            padding-left: 0;
+        }
     }
 
     &.sticky {
@@ -29,6 +55,14 @@
     &_logo {
         @include flex;
         gap: 15px;
+
+        @include bp($md) {
+            padding-left: 90px;
+        }
+
+        @include bp($sm) {
+            padding-left: 60px;
+        }
 
         & svg {
             width: 50px;
@@ -52,8 +86,75 @@
         width: 80%;
         color: $secondary-color;
 
+        @include bp($md) {
+            align-items: flex-start;
+            flex-direction: column;
+            font-size: 42px;
+            gap: 20px;
+        }
+
+        @include bp($sm) {
+            font-size: 24px;
+            gap: 15px;
+        }
+
         & li {
             cursor: pointer;
+        }
+    }
+}
+
+.ham {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    @include flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba($color: $light-green, $alpha: .3);
+    padding: 15px 18px;
+    width: fit-content;
+    border-radius: 50%;
+    z-index: 999;
+
+    @include bp($sm) {
+        padding: 10px 8px;
+        gap: 5px;
+        right: 15px;
+        top: 20px;
+    }
+
+    & div {
+        background-color: $cta-color;
+        width: 35px;
+        height: 5px;
+        transition: all 0.3s ease-in-out;
+
+        @include bp($sm) {
+            width: 25px;
+            height: 3px;
+        }
+    }
+
+    &.active {
+        & div:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 12px);
+
+            @include bp($sm) {
+                transform: rotate(45deg) translate(5px, 4px);
+            }
+        }
+
+        & div:nth-child(2) {
+            opacity: 0;
+        }
+
+        & div:nth-child(3) {
+            transform: rotate(-45deg) translate(10px, -10px);
+
+            @include bp($sm) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
         }
     }
 }
