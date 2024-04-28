@@ -3,9 +3,11 @@
 .me {
     @include flex;
     gap: 50px;
+    align-items: flex-start;
     padding: 0 100px;
 
     @include bp($lg) {
+        align-items: center;
         flex-direction: column-reverse;
     }
 

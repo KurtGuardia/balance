@@ -5,29 +5,9 @@ import Me from './Me'
 import Services from './Services'
 import Process from './Process'
 import Contact from './Contact'
-import {
-  motion,
-  useScroll,
-  useTransform,
-} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function Landing() {
-  const { scrollYProgress } = useScroll()
-  const scale = useTransform(
-    scrollYProgress,
-    [0, 0.2, 0.5],
-    [0.7, 1, 1],
-  )
-  const opacity = useTransform(
-    scrollYProgress,
-    [0, 0.2, 0.5],
-    [0, 1, 1],
-  )
-  const y = useTransform(
-    scrollYProgress,
-    [0, 0.2, 0.5],
-    ['150%', '0%', '0%'],
-  )
   const logoAnimation = {
     animateColor: {
       fill: [
@@ -57,13 +37,7 @@ export default function Landing() {
       },
     },
   }
-  const animateRotation = {
-    rotation: ['0deg', '10deg'],
-    transition: {
-      duration: 0.5,
-      ease: 'easeOut',
-    },
-  }
+
   const currentDate = new Date()
   const month = currentDate.toLocaleString('default', {
     month: 'long',
@@ -92,12 +66,16 @@ export default function Landing() {
       </div>
       <div className='landing_content'>
         <motion.p
-          style={{
-            opacity,
-            scale,
-            y,
-            transition: 'all 1s ease-out',
+          initial={{ opacity: 0, scale: 0.5, y: '120%' }}
+          whileInView={{ opacity: 1, scale: 1, y: '0%' }}
+          transition={{
+            duration: 1,
+            ease: 'easeOut',
+            opacity: {
+              duration: 1.8,
+            },
           }}
+          viewport={{ margin: '100px' }}
           className='landing_content-desc'
         >
           Atención nutricional personalizada, tomando en
@@ -115,10 +93,7 @@ export default function Landing() {
         <p className='landing_footer-date'>
           Updated: {month}, {year}
         </p>
-        <div
-          className='landing_footer-dev'
-          whileTap={{ rotate: '100deg' }}
-        >
+        <div className='landing_footer-dev'>
           <p>Developed by:</p>
           <motion.div whileHover={{ rotate: '-10deg' }}>
             <a

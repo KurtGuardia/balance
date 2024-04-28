@@ -1,6 +1,7 @@
 import '../styles/me.scss'
 import vic from '../imgs/Victoria.jpg'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 export default function Me() {
   const [pnieOpen, setPnieOpen] = useState(false)
@@ -9,7 +10,19 @@ export default function Me() {
 
   return (
     <div className='me' id='me'>
-      <img src={vic} alt='Foto de Victoria Espada' />
+      <motion.img
+        initial={{ scale: 0, rotate: 0, opacity: 0 }}
+        viewport={{ once: true }}
+        whileInView={{ scale: 1, rotate: 360, opacity: 1 }}
+        transition={{
+          duration: 0.5,
+          opacity: {
+            duration: 2,
+          },
+        }}
+        src={vic}
+        alt='Foto de Victoria Espada'
+      />
       <div className='me_content'>
         <h2>Sobre mí</h2>
         <p>
