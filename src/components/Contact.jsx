@@ -62,7 +62,7 @@ export default function Contact() {
           title='Click y envíame un mensaje en Whatsapp'
           className='conctact_options-whatsapp'
         >
-          <span className='contact_options'>
+          <span className='contact_options-whatsapp-icon'>
             <Whatsapp />
           </span>{' '}
           (+34) 634 150 027
