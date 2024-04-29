@@ -62,6 +62,13 @@
 
                 &-svg {
                     padding-left: 20px;
+
+                    @include bp($sm) {
+                        & svg {
+                            width: 20px;
+                            transform: translateY(5px);
+                        }
+                    }
                 }
             }
 

@@ -60,6 +60,16 @@
             }
         }
 
+        &-whatsapp {
+            &-icon {
+                @include bp($sm) {
+                    & svg {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
         &-bgImg {
             position: absolute;
             top: 50%;
