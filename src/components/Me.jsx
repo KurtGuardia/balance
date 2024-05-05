@@ -12,13 +12,13 @@ export default function Me() {
   return (
     <div className='me' id='me'>
       <motion.img
-        initial={{ scale: 0, rotate: 0, opacity: 0 }}
+        initial={{ y: '50%', opacity: 0 }}
         viewport={{ once: true }}
-        whileInView={{ scale: 1, rotate: 360, opacity: 1 }}
+        whileInView={{ y: '0%', opacity: 1 }}
         transition={{
-          duration: 0.5,
+          duration: 1,
           opacity: {
-            duration: 2,
+            duration: 5,
           },
         }}
         src={vic}
