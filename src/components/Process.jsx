@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../styles/process.scss'
 import { motion } from 'framer-motion'
 // import { ReactComponent as Dropdown } from '../imgs/dropdown.svg'
