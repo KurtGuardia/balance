@@ -1,4 +1,5 @@
 import { ReactComponent as Logo } from '../imgs/logo.svg'
+import img from '../imgs/bottom.jpg'
 import '../styles/landing.scss'
 import Integrativa from './Integrativa'
 import Me from './Me'
@@ -48,7 +49,7 @@ export default function Landing() {
     <div className='landing' id='top'>
       <div className='landing_hero'>
         <motion.div
-          className='landing_hero_img'
+          className='landing_hero_logo'
           initial={{ y: 0 }}
           animate={logoAnimation.animanteBounce}
         >
@@ -59,13 +60,34 @@ export default function Landing() {
             <Logo />
           </motion.div>
         </motion.div>
-        <h1 className='landing_hero_title'>Balance</h1>
+        {/* <h1 className='landing_hero_title'>Balance</h1>
         <h2 className='landing_hero_subtitle'>
           Nutrición Integrativa
+        </h2> */}
+        <h1 className='landing_hero_title'>
+          Nutrición Integrativa
+        </h1>
+        <h2 className='landing_hero_subtitle'>
+          Bienestar físico, emocional, mental y espiritual.{' '}
         </h2>
+        <h3 className='landing_hero_desc'>
+          Una nutrición adecuada es la base para mantener un
+          buen estado de salud, prevenir enfermedades en el
+          futuro y promover el bienestar a largo plazo.
+        </h3>
+        <div className='landing_hero_bottom'>
+          <div className='landing_hero_bottom-text'>
+            Esp. Microbiota - PNIE
+          </div>
+          <img
+            src={img}
+            alt='wide range of healthy food'
+            className='landing_hero_bottom-img'
+          />
+        </div>
       </div>
       <div className='landing_content'>
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, scale: 0.5, y: '120%' }}
           whileInView={{ opacity: 1, scale: 1, y: '0%' }}
           transition={{
@@ -82,12 +104,12 @@ export default function Landing() {
           cuenta la influencia de la alimentación en la
           salud física, emocional y mental; y su relación
           con la microbiota intestinal.
-        </motion.p>
-        <Integrativa />
+        </motion.p> */}
         <Me />
+        <Integrativa />
         <Services />
         <Process />
-        <Contact />
+        {/* <Contact /> */}
       </div>
       <div className='landing_footer'>
         <p className='landing_footer-date'>

@@ -5,6 +5,7 @@
     gap: 50px;
     align-items: flex-start;
     padding: 0 100px;
+    margin-top: 150px;
 
     @include bp($lg) {
         align-items: center;
@@ -15,12 +16,35 @@
         padding: 0;
     }
 
-    & img {
-        width: 35%;
-        border-radius: 25px;
+    &_picture {
+        @include flex;
+        flex-direction: column;
 
-        @include bp($sm) {
-            width: 50%;
+        & img {
+            width: 70%;
+            border-radius: 25px;
+
+            @include bp($sm) {
+                width: 50%;
+            }
+        }
+
+        &_msg {
+            font-weight: bold;
+            font-size: 32px;
+            color: $primary-color;
+            text-align: center;
+
+            @include bp($xl) {
+                padding: 0;
+                font-size: 24px;
+                margin-top: 60px;
+            }
+        }
+
+        &_name {
+            text-align: center;
+            margin: auto;
         }
     }
 
@@ -72,25 +96,13 @@
                 }
             }
 
-        }
-
-        &_msg {
-            font-weight: bold;
-            font-size: 32px;
-            color: $primary-color;
-            padding: 30px 80px;
-            text-align: center;
-
-            @include bp($xl) {
-                padding: 0;
-                font-size: 24px;
-                margin-top: 60px;
+            & img {
+                width: 30%;
             }
         }
 
-        &_name {
-            text-align: center;
-            margin: auto;
+        & p:last-child {
+            margin-top: 80px;
         }
     }
 }

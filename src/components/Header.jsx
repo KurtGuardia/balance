@@ -17,7 +17,7 @@ export default function Header() {
     ['Sobre Mí', 'me'],
     ['Servicios', 'services'],
     ['Proceso', 'process'],
-    ['Contacto', 'contact'],
+    ['Que es?', 'integrativa'],
   ]
 
   useEffect(() => {
