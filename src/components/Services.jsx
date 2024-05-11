@@ -16,7 +16,7 @@ const services = [
     text: 'Si deseas <b>mejorar síntomas</b> como: Hinchazón y/o distensión abdominal, inflamación, constipación, sensación de pesadez, acidez o reflujo.',
   },
   {
-    title: 'Habito y estilo de Vida Saludable',
+    title: 'Habitos y estilo de Vida Saludable',
     text: 'Si lo que estas buscando es <b>mejorar tus hábitos</b> y estilo de vida estas en el lugar correcto.',
   },
   {

@@ -35,7 +35,7 @@ export default function Process() {
   return (
     <div className='process' id='process'>
       <h2 className='process_title'>El proceso</h2>
-      <ul>
+      {/* <ul>
         {steps.map((step, index) => (
           <motion.li
             whileHover={{ scale: 1.05 }}
@@ -66,7 +66,39 @@ export default function Process() {
             )}
           </motion.li>
         ))}
-      </ul>
+      </ul> */}
+      <p className='process_text'>
+        Te acompaño durante 3 meses en un proceso de
+        transformación, enseñándote la mejor manera de
+        alimentarte de acuerdo a tus necesidades y
+        trabajando en la psicología de la alimentación,
+        proporcionándote las herramientas para lograr un
+        bienestar duradero. <br />
+        <br />
+        Si quieres comentar tu caso has click{' '}
+        <motion.a
+          initial={{
+            borderBottom: '2px solid transparent',
+          }}
+          whileHover={{
+            scale: 1.05,
+            borderBottom: '2px solid #92A28E',
+            color: '#92A28E',
+            transition: {
+              duration: 0.25,
+              ease: 'easeInOut',
+            },
+          }}
+          href='https://wa.me/34634150027?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20lo%20siguiente:
+'
+          target='_blank'
+          rel='noreferrer'
+          title='Click y envíame un mensaje en Whatsapp'
+          className='conctact_options-whatsapp'
+        >
+          aquí.
+        </motion.a>
+      </p>
     </div>
   )
 }

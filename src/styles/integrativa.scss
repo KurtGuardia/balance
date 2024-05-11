@@ -89,5 +89,12 @@
                 grid-column: 2;
             }
         }
+
+        &-pair:nth-child(3) {
+            .landing_content_integrativa-grid-pair--img {
+                width: 300px;
+            }
+
+        }
     }
 }
