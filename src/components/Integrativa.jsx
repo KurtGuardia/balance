@@ -11,7 +11,7 @@ export default function Integrativa() {
     whileInView: { opacity: 1 },
     viewport: { once: true },
     transition: {
-      duration: 1,
+      duration: 0.5,
       ease: 'easeIn',
       delay: 0.5,
     },

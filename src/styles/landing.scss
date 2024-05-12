@@ -20,7 +20,7 @@
         }
 
         &_logo {
-            margin-top: 130px;
+            margin: 130px 0 50px;
             width: 150px;
 
             @include bp($md) {
@@ -91,7 +91,7 @@
         background-color: $secondary-color;
         position: relative;
         @include flex;
-        gap: 200px;
+        gap: 150px;
         align-items: unset;
         flex-direction: column;
 

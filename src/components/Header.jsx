@@ -15,9 +15,9 @@ export default function Header() {
 
   const list = [
     ['Sobre Mí', 'me'],
+    ['Nutrición Integrativa', 'integrativa'],
     ['Servicios', 'services'],
     ['Proceso', 'process'],
-    ['Que es?', 'integrativa'],
   ]
 
   useEffect(() => {
