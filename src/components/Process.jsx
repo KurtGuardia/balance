@@ -75,15 +75,15 @@ export default function Process() {
         proporcionándote las herramientas para lograr un
         bienestar duradero. <br />
         <br />
-        Si quieres comentar tu caso has click{' '}
+        Si quieres comentar tu caso haz click{' '}
         <motion.a
           initial={{
             borderBottom: '2px solid transparent',
           }}
           whileHover={{
-            scale: 1.05,
-            borderBottom: '2px solid #92A28E',
-            color: '#92A28E',
+            // scale: 1.05,
+            borderBottom: '2px solid #ccd2ae',
+            color: '#ccd2ae',
             transition: {
               duration: 0.25,
               ease: 'easeInOut',
