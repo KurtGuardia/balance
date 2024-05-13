@@ -3,6 +3,10 @@
 .process {
     margin-bottom: 250px;
 
+    @include bp($sm) {
+        margin-bottom: 100px;
+    }
+
     &_title {
         margin: 80px;
 
@@ -16,6 +20,15 @@
         margin: auto;
         font-size: 36px;
         text-align: center;
+
+        @include bp($md) {
+            font-size: 28px;
+        }
+
+        @include bp($sm) {
+            font-size: 18px;
+            width: 90%;
+        }
 
         & a {
             text-decoration: none;
