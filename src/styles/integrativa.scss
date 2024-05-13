@@ -19,6 +19,7 @@
 
         @include bp($md) {
             gap: 50px;
+            padding: 0 10px;
         }
 
         @include bp($sm) {
@@ -90,11 +91,15 @@
             }
         }
 
+        // the brain-gut img
         &-pair:nth-child(3) {
             .landing_content_integrativa-grid-pair--img {
                 width: 300px;
-            }
 
+                @include bp($sm) {
+                    width: 150px;
+                }
+            }
         }
     }
 }
