@@ -60,7 +60,7 @@
                 text-align: center;
                 width: 70%;
                 margin: auto;
-                padding: 80px 0;
+                padding: 50px 0;
 
                 @include bp($xl) {
                     padding: 0;
@@ -81,11 +81,19 @@
         }
     }
 
-    &_content {
+    & p:first-of-type {
+        & span {
+            color: $cta-color-2;
+            font-weight: bold;
+        }
+    }
+
+    &_areas {
+        width: 100%;
         @include flex;
-        gap: 20px;
-        flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
+        gap: 20px;
 
         @include bp($xl) {
             gap: 0;
@@ -96,6 +104,7 @@
         }
 
         &_area {
+            width: 50%;
 
             @include bp($lg) {
                 padding: 10px 0;
@@ -139,10 +148,6 @@
                     width: 60%;
                 }
             }
-        }
-
-        & p:last-child {
-            margin-top: 80px;
         }
     }
 }
