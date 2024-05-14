@@ -34,7 +34,7 @@ export default function Process() {
 
   return (
     <div className='process' id='process'>
-      <h2 className='process_title'>El proceso</h2>
+      <h2 className='process_title'>Proceso de atención</h2>
       {/* <ul>
         {steps.map((step, index) => (
           <motion.li
@@ -68,14 +68,14 @@ export default function Process() {
         ))}
       </ul> */}
       <p className='process_text'>
-        Te acompaño durante 3 meses en un proceso de
-        transformación, enseñándote la mejor manera de
-        alimentarte de acuerdo a tus necesidades y
-        trabajando en la psicología de la alimentación,
-        proporcionándote las herramientas para lograr un
-        bienestar duradero. <br />
+        Te acompaño en un proceso de transformación,
+        enseñándote la mejor manera de alimentarte de
+        acuerdo a tus necesidades, combinando tus sesiones
+        con técnicas de coaching y PNL, proporcionándote las
+        herramientas para lograr un bienestar duradero.
         <br />
-        Si quieres comentar tu caso haz click{' '}
+        <br />
+        Si quieres comentar tu caso haz click:{' '}
         <motion.a
           initial={{
             borderBottom: '2px solid transparent',

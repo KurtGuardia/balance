@@ -5,7 +5,7 @@ import Integrativa from './Integrativa'
 import Me from './Me'
 import Services from './Services'
 import Process from './Process'
-// import Contact from './Contact'
+import Contact from './Contact'
 import { motion } from 'framer-motion'
 
 export default function Landing() {
@@ -109,7 +109,7 @@ export default function Landing() {
         <Integrativa />
         <Services />
         <Process />
-        {/* <Contact /> */}
+        <Contact />
       </div>
       <div className='landing_footer'>
         <p className='landing_footer-date'>

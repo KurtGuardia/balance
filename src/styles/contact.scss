@@ -2,10 +2,9 @@
 
 .contact {
     @include flex;
-    flex-direction: column;
-    background-color: $light-green;
-    height: 90vh;
-    padding: 30px 0 120px;
+    gap: 50px;
+    // background-color: $light-green;
+    padding: 30px 0 100px;
 
     @include bp($lg) {
         padding: 30px 0 60px;
@@ -15,116 +14,124 @@
         padding: 0;
     }
 
-    &_title {
-        text-align: center;
+    &_social-media {
+        width: 80px;
 
-        @include bp($sm) {
-            padding: 20px;
+        & img {
+            width: 100%;
         }
     }
 
-    &_options {
-        position: relative;
-        @include flex;
-        gap: 30px;
-        flex: 1;
-        flex-direction: column;
-        font-size: 42px;
-        background-image: radial-gradient(ellipse closest-corner at 50% 50%, white 30%, transparent 75%);
+    // &_title {
+    //     text-align: center;
 
-        @include bp($md) {
-            font-size: 34px;
-        }
+    //     @include bp($sm) {
+    //         padding: 20px;
+    //     }
+    // }
 
-        & a {
-            @include flex;
-            gap: 10px;
-            z-index: 10;
-            text-decoration: none;
-            color: inherit;
-            padding: 0 15px;
+    // &_options {
+    //     position: relative;
+    //     @include flex;
+    //     gap: 30px;
+    //     flex: 1;
+    //     flex-direction: column;
+    //     font-size: 42px;
+    //     background-image: radial-gradient(ellipse closest-corner at 50% 50%, white 30%, transparent 75%);
 
-            @include bp($sm) {
-                font-size: 20px;
-                line-break: anywhere;
-                padding: 0 10px;
+    //     @include bp($md) {
+    //         font-size: 34px;
+    //     }
 
-            }
+    //     & a {
+    //         @include flex;
+    //         gap: 10px;
+    //         z-index: 10;
+    //         text-decoration: none;
+    //         color: inherit;
+    //         padding: 0 15px;
 
-            &:visited {
-                color: inherit;
-            }
+    //         @include bp($sm) {
+    //             font-size: 20px;
+    //             line-break: anywhere;
+    //             padding: 0 10px;
 
-            &:focus {
-                outline: 2px solid $cta-color;
-            }
-        }
+    //         }
 
-        &-whatsapp {
-            &-icon {
-                @include bp($sm) {
-                    & svg {
-                        width: 30px;
-                    }
-                }
-            }
-        }
+    //         &:visited {
+    //             color: inherit;
+    //         }
 
-        &-bgImg {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: .15;
-            width: 120%;
-            border-radius: 35px;
-            z-index: 0;
+    //         &:focus {
+    //             outline: 2px solid $cta-color;
+    //         }
+    //     }
 
-            @include bp($lg) {
-                width: 100%
-            }
+    //     &-whatsapp {
+    //         &-icon {
+    //             @include bp($sm) {
+    //                 & svg {
+    //                     width: 30px;
+    //                 }
+    //             }
+    //         }
+    //     }
 
-            @include bp($sm) {
-                // width: auto;
-            }
-        }
+    //     &-bgImg {
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         opacity: .15;
+    //         width: 120%;
+    //         border-radius: 35px;
+    //         z-index: 0;
 
-    }
+    //         @include bp($lg) {
+    //             width: 100%
+    //         }
 
-    &_name {
-        @include flex;
-        font-family: $Brown;
-        letter-spacing: 3px;
-        font-size: 42px;
-        margin-top: 80px;
+    //         @include bp($sm) {
+    //             // width: auto;
+    //         }
+    //     }
 
-        @include bp($lg) {
-            font-size: 35px;
-        }
+    // }
 
-        @include bp($md) {
-            margin-top: 0px;
-            font-size: 25px;
-        }
+    // &_name {
+    //     @include flex;
+    //     font-family: $Brown;
+    //     letter-spacing: 3px;
+    //     font-size: 42px;
+    //     margin-top: 80px;
 
-        @include bp($sm) {
-            flex-direction: column;
-            font-size: 18px;
-            gap: 5px;
-            margin-bottom: 20px;
-        }
+    //     @include bp($lg) {
+    //         font-size: 35px;
+    //     }
 
-        &-logo {
-            margin: 0 20px;
+    //     @include bp($md) {
+    //         margin-top: 0px;
+    //         font-size: 25px;
+    //     }
 
-            & svg {
-                width: 50px;
-                height: auto;
+    //     @include bp($sm) {
+    //         flex-direction: column;
+    //         font-size: 18px;
+    //         gap: 5px;
+    //         margin-bottom: 20px;
+    //     }
 
-                @include bp($sm) {
-                    width: 30px;
-                }
-            }
-        }
-    }
+    //     &-logo {
+    //         margin: 0 20px;
+
+    //         & svg {
+    //             width: 50px;
+    //             height: auto;
+
+    //             @include bp($sm) {
+    //                 width: 30px;
+    //             }
+    //         }
+    //     }
+    // }
 }

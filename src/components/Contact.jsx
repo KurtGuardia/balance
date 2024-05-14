@@ -1,43 +1,46 @@
 import '../styles/contact.scss'
-import { ReactComponent as Logo } from '../imgs/logo.svg'
-import { motion } from 'framer-motion'
-import yoga from '../imgs/yoga.png'
-import { ReactComponent as Whatsapp } from '../imgs/whatsapp.svg'
+// import { ReactComponent as Logo } from '../imgs/logo.svg'
+// import { motion } from 'framer-motion'
+// import yoga from '../imgs/yoga.png'
+// import { ReactComponent as Whatsapp } from '../imgs/whatsapp.svg'
+import FB from '../imgs/facebook.png'
+import IG from '../imgs/instagram.png'
+import LinkedIn from '../imgs/linkedin.png'
 
 export default function Contact() {
-  const logoAnimation = {
-    animateColor: {
-      fill: [
-        '#92A28E',
-        '#a38b93',
-        '#eeddc9',
-        '#F6F6EA',
-        '#eeddc9',
-        '#a38b93',
-        '#92A28E',
-      ],
-      transition: {
-        duration: 4,
-        ease: 'easeOut',
-        repeat: Infinity,
-        repeatDelay: 0,
-        direction: 'alternate',
-      },
-    },
-    animanteBounce: {
-      y: ['0%', '5%'],
-      transition: {
-        duration: 1,
-        ease: 'easeOut',
-        repeat: Infinity,
-        repeatType: 'reverse',
-      },
-    },
-  }
+  // const logoAnimation = {
+  //   animateColor: {
+  //     fill: [
+  //       '#92A28E',
+  //       '#a38b93',
+  //       '#eeddc9',
+  //       '#F6F6EA',
+  //       '#eeddc9',
+  //       '#a38b93',
+  //       '#92A28E',
+  //     ],
+  //     transition: {
+  //       duration: 4,
+  //       ease: 'easeOut',
+  //       repeat: Infinity,
+  //       repeatDelay: 0,
+  //       direction: 'alternate',
+  //     },
+  //   },
+  //   animanteBounce: {
+  //     y: ['0%', '5%'],
+  //     transition: {
+  //       duration: 1,
+  //       ease: 'easeOut',
+  //       repeat: Infinity,
+  //       repeatType: 'reverse',
+  //     },
+  //   },
+  // }
 
   return (
     <div className='contact' id='contact'>
-      <h2 className='contact_title'>
+      {/* <h2 className='contact_title'>
         Atención Nutricional Personalizada <br />
         Consulta Privada Online
       </h2>
@@ -118,7 +121,31 @@ export default function Contact() {
           </motion.div>
         </motion.div>
         Nutricionista Dietista
-      </div>
+      </div> */}
+      <a
+        href='https://www.facebook.com/profile.php?id=61559428017197'
+        className='contact_social-media'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <img src={FB} alt='Facebook logo' />
+      </a>
+      <a
+        href='https://www.instagram.com/balance_nutricionintegrativa/'
+        target='_blank'
+        rel='noreferrer'
+        className='contact_social-media'
+      >
+        <img src={IG} alt='Instagram logo' />
+      </a>
+      <a
+        href='https://www.linkedin.com/in/victoriaespada051097/'
+        className='contact_social-media'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <img src={LinkedIn} alt='LinkedIn logo' />
+      </a>
     </div>
   )
 }
