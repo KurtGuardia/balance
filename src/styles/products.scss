@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.products {
+
+    &_text {
+        margin: auto;
+        padding: 0 100px;
+
+        @include bp($md) {
+            padding: 0 40px;
+        }
+
+        div{
+            text-align: center;
+        }
+    }
+}
