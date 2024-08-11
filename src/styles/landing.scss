@@ -83,7 +83,6 @@
         }
 
         &_desc {
-            // font-size: 36px;
             font-weight: bold;
             width: 70%;
 
@@ -230,63 +229,13 @@
             }
         }
     }
-}
 
-html,
-body {
-    font-family: $Lit;
-    font-size: 24px;
-    color: $gray;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    @include bp($sm) {
-        font-size: 18px;
-    }
-
-    h1,
-    h2 {
-        margin: 0;
-    }
-
-    h2 {
-        color: $cta-color;
-        letter-spacing: 4px;
-        font-family: $Brown;
-        font-size: 50px;
-        margin-top: 50px;
-
-        @include bp($xl) {
-            font-size: 42px;
-        }
-
-        @include bp($lg) {
-            font-size: 32px;
-        }
-
-        @include bp($sm) {
-            font-size: 28px;
-            letter-spacing: 1px;
-            line-height: 120%;
-        }
-    }
-
-    ::-webkit-scrollbar {
-        width: 20px;
-
-        &-thumb {
-            background-color: $cta-color;
-            border-radius: 10px;
-        }
-
-        &-track {
-            background-color: $white;
-        }
-    }
-
-    ::selection {
-        background-color: $light-green;
-        color: $cta-color;
+    & .overlay{
+        position: fixed;
+        opacity: .70;
+        background-color: $cta-color;
+        height: 100vh;
+        width: 100vw;
+        z-index: 90;
     }
 }

@@ -1,17 +1,6 @@
 @import './variables.scss';
 
-.landing_content_integrativa {
-    &-title {
-        margin: 80px;
-
-        @include bp($md) {
-            margin: 0 50px;
-        }
-
-        @include bp($sm) {
-            margin: 0 30px;
-        }
-    }
+.integrativa {
 
     &-grid {
         display: grid;
@@ -80,19 +69,19 @@
         }
 
         &-pair:nth-child(even) {
-            .landing_content_integrativa-grid-pair--text {
+            .integrativa-grid-pair--text {
                 grid-column: 1;
                 grid-row: 1;
             }
 
-            .landing_content_integrativa-grid-pair--img {
+            .integrativa-grid-pair--img {
                 grid-column: 2;
             }
         }
 
         // the brain-gut img
         &-pair:nth-child(3) {
-            .landing_content_integrativa-grid-pair--img {
+            .integrativa-grid-pair--img {
                 width: 300px;
 
                 @include bp($sm) {

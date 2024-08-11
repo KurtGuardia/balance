@@ -18,7 +18,6 @@
 
     @include bp($sm) {
         margin-top: 50px;
-        padding: 20px;
     }
 
     &_presentation {
@@ -112,6 +111,10 @@
             gap: 0;
         }
 
+        @include bp($md) {
+flex-direction: column;
+        }
+
         @include bp($sm) {
             padding: 0 20px;
         }
@@ -126,6 +129,9 @@
             @include bp($lg) {
                 padding: 10px 0;
             }
+
+        @include bp($md) {width: auto;
+        }
 
             &-title {
                 font-weight: bold;

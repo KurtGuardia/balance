@@ -2,7 +2,6 @@
 
 .services {
     &_title {
-        margin-left: 80px;
 
         @include bp($sm) {
             margin-left: 10px;

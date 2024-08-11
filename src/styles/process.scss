@@ -1,39 +1,28 @@
 @import './variables.scss';
 
 .process {
-    margin-bottom: 50px;
-
-    @include bp($sm) {
-        margin-bottom: 100px;
-    }
-
-    &_title {
-        margin: 80px;
-
-        @include bp($sm) {
-            margin: 40px;
-        }
-    }
 
     &_text {
-        width: 70%;
         margin: auto;
-        text-align: center;
+        padding: 0 100px;
 
         @include bp($md) {
-            font-size: 28px;
+            padding: 0 40px;
         }
 
-        @include bp($sm) {
-            font-size: 18px;
-            width: 90%;
-        }
+        & div {
+            text-align: center;
 
-        & a {
-            text-decoration: none;
-            color: $primary-color;
-            font-weight: bold;
-            font-size: 28px;
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                font-weight: bold;
+                font-size: 28px;
+
+                @include bp($sm) {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }

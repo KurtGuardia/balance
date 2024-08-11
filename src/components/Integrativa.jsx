@@ -42,29 +42,29 @@ export default function Integrativa() {
 
   return (
     <div
-      className='landing_content_integrativa'
+      className='integrativa'
       id='integrativa'
     >
       <motion.h2
         {...motionProps}
-        className='landing_content_integrativa-title'
+        className='integrativa-title'
       >
         Nutrición Integrativa
       </motion.h2>
-      <ul className='landing_content_integrativa-grid'>
+      <ul className='integrativa-grid'>
         {listItems.map((item, index) => (
           <motion.li
             key={index}
             {...motionProps}
-            className='landing_content_integrativa-grid-pair'
+            className='integrativa-grid-pair'
           >
             <img
-              className='landing_content_integrativa-grid-pair--img'
+              className='integrativa-grid-pair--img'
               src={item.imgSrc}
               alt={item.imgAlt}
             />
             <p
-              className='landing_content_integrativa-grid-pair--text'
+              className='integrativa-grid-pair--text'
               dangerouslySetInnerHTML={{
                 __html: item.text,
               }}

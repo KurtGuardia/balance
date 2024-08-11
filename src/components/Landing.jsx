@@ -7,6 +7,7 @@ import Services from './Services'
 import Process from './Process'
 import Contact from './Contact'
 import { motion } from 'framer-motion'
+import Products from './Products'
 
 export default function Landing() {
   const logoAnimation = {
@@ -87,6 +88,7 @@ export default function Landing() {
         <Integrativa />
         <Services />
         <Process />
+        <Products/>
         <Contact />
       </div>
       <div className='landing_footer'>
