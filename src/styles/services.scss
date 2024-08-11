@@ -29,6 +29,10 @@
         padding: 30px;
         width: 18%;
 
+        & b{
+            color: $cta-color;
+        }
+
         @include bp($xl) {
             width: 35%;
         }

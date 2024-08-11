@@ -18,7 +18,6 @@
     &_text {
         width: 70%;
         margin: auto;
-        font-size: 36px;
         text-align: center;
 
         @include bp($md) {
@@ -34,101 +33,7 @@
             text-decoration: none;
             color: $primary-color;
             font-weight: bold;
-            font-size: 40px;
+            font-size: 28px;
         }
     }
-
-    // & ul {
-    //     list-style: none;
-    //     display: flex;
-    //     gap: 50px;
-    //     flex-wrap: wrap;
-
-    //     @include bp($lg) {
-    //         gap: 20px;
-    //     }
-
-    //     @include bp($md) {
-    //         flex-direction: column;
-    //     }
-
-    //     @include bp($sm) {
-    //         padding-left: 0;
-    //     }
-    // }
-
-    // &_step {
-    //     cursor: pointer;
-    //     width: 42%;
-    //     padding: 10px 30px;
-
-    //     @include bp($lg) {
-    //         width: 45%;
-    //         padding: 10px;
-    //     }
-
-    //     @include bp($md) {
-    //         width: 65%;
-    //         margin: auto;
-    //     }
-
-    //     @include bp($sm) {
-    //         width: 85%;
-    //         margin: auto;
-    //     }
-
-    //     &.box {
-    //         box-shadow: 2px 5px 15px $cta-color;
-
-    //         .process_step-title {
-    //             padding: 0;
-    //             box-shadow: none;
-    //         }
-    //     }
-
-    //     &-title {
-    //         padding: 10px 30px;
-    //         box-shadow: 2px 5px 15px $cta-color;
-    //         margin: 0;
-
-    //         @include bp($xl) {
-    //             padding: 10px 10px;
-    //             font-size: 24px;
-    //         }
-
-    //         @include bp($sm) {
-    //             font-size: 18px;
-    //         }
-
-    //         &-num {
-    //             font-size: 38px;
-    //             color: $primary-color;
-    //             background-color: $beige;
-    //             border-radius: 50%;
-    //             padding: 3px 12px;
-    //             margin-right: 15px;
-
-    //             @include bp($xl) {
-    //                 margin-right: 10px;
-    //                 font-size: 30px;
-    //             }
-
-    //             @include bp($lg) {
-    //                 font-size: 24px;
-    //                 padding: 5px 10px;
-    //             }
-
-    //             @include bp($sm) {
-    //                 font-size: 14px;
-    //                 margin-right: 5px;
-    //                 padding: 3px 6px;
-    //             }
-    //         }
-
-    //         &-svg {
-    //             float: right;
-    //         }
-    //     }
-    // }
-
 }

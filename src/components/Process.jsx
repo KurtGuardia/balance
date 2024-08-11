@@ -1,89 +1,45 @@
 import React from 'react'
 import '../styles/process.scss'
 import { motion } from 'framer-motion'
-// import { ReactComponent as Dropdown } from '../imgs/dropdown.svg'
 
 export default function Process() {
-  // const [openStep, setOpenStep] = useState({})
-
-  // const steps = [
-  //   {
-  //     title: 'Primera Consulta:',
-  //     text: 'Llegará a tu correo un enlace para conectarnos por Videollamada, la cual tendrá una duración de 45 minutos a una hora, donde evaluaremos tus hábitos alimentarios, estado emocional-mental, estilo de vida, tus gustos y preferencias entre otras cosas. También revisaremos objetivos en base a tu caso.',
-  //   },
-  //   {
-  //     title: 'Desarrollo de tu plan personalizado:',
-  //     text: 'De acuerdo a tus necesidades elaboraré tu plan alimentario con recomendaciones de estilo de vida y recetas, incluiré técnicas de relajación y manejo de estrés además de suplementación si es necesaria.',
-  //   },
-  //   {
-  //     title: 'Entrega del Plan:',
-  //     text: 'Una semana después de la primera consulta, tendremos una nueva videollamada donde te compartiré tu plan alimentario con las recomendaciones mencionadas. Después te enviaré todo el material a tu correo electrónico. Cualquier duda que tengas puedes escribirme al correo: balancenutricionintegrativa@gmail.com',
-  //   },
-  //   {
-  //     title: 'Consulta de Seguimiento:',
-  //     text: 'Dos semanas después evaluaremos como te sientes, tu adherencia al plan alimentario y a las recomendaciones de estilo de vida, si es necesario haremos modificaciones.',
-  //   },
-  // ]
-
-  // const toggleStep = (index) => {
-  //   setOpenStep((prevState) => ({
-  //     ...prevState,
-  //     [index]: !prevState[index],
-  //   }))
-  // }
-
   return (
     <div className='process' id='process'>
-      <h2 className='process_title'>Proceso de atención</h2>
-      {/* <ul>
-        {steps.map((step, index) => (
-          <motion.li
-            whileHover={{ scale: 1.05 }}
-            key={index}
-            onClick={() => toggleStep(index)}
-            className={
-              openStep[index]
-                ? 'process_step box'
-                : 'process_step'
-            }
-          >
-            <h3 className='process_step-title'>
-              <span className='process_step-title-num'>
-                {index + 1}
-              </span>
-              {step.title}
-              <span className='process_step-title-svg'>
-                <Dropdown />
-              </span>
-            </h3>
-            {openStep[index] && (
-              <p
-                className='process_step-text'
-                dangerouslySetInnerHTML={{
-                  __html: step.text,
-                }}
-              />
-            )}
-          </motion.li>
-        ))}
-      </ul> */}
+      <h2 className='process_title'>
+        Proceso de atención y enfoque integrativo
+      </h2>
       <p className='process_text'>
-        Te acompaño en un proceso de transformación,
-        enseñándote la mejor manera de alimentarte de
-        acuerdo a tus necesidades, combinando tus sesiones
-        con técnicas de coaching y PNL, proporcionándote las
-        herramientas para lograr un bienestar duradero.
+        Mi enfoque se basa en el método de Nutrición
+        Emocional, un enfoque holístico que evalúa y trabaja
+        sobre cuatro <b>pilares fundamentales para tu salud:
+        físico, mental, emocional y espiritual.</b> Te acompaño
+        en un proceso de transformación de 3 meses, donde
+        evaluaremos cada uno de estos aspectos para crear un
+        plan de acción personalizado que se ajuste a tus
+        necesidades y objetivos. Durante este proceso,
+        aprenderás a <b>nutrir tu cuerpo de manera consciente</b>,
+        adaptando tu alimentación a lo que realmente
+        necesitas para <b>sentirte bien</b>. Combinaremos las
+        sesiones con técnicas de coaching y Programación
+        Neurolingüística (PNL), entre muchas otras, lo que
+        te permitirá cambiar patrones y hábitos que han
+        estado interfiriendo con tu bienestar. Este enfoque
+        no solo se centra en el "qué" y el "cómo" comer,
+        sino que también aborda las emociones y creencias
+        que rodean tu relación con la comida, tu salud y tu
+        cuerpo. Mi objetivo es <b>proporcionarte las
+        herramientas necesarias para que logres un bienestar
+        duradero</b>, empoderándote para tomar decisiones que
+        favorezcan tu salud en todos los niveles.
         <br />
         <br />
-        Si quieres comentar tu caso haz click:{' '}
-        <motion.a
+        Da click <motion.a
           initial={{
             borderBottom: '2px solid transparent',
           }}
           whileHover={{
-            // scale: 1.05,
-            borderBottom: '2px solid #ccd2ae',
-            color: '#ccd2ae',
+            borderBottom: '2px solid #a38b93',
+            color: '#a38b93',
             transition: {
               duration: 0.25,
               ease: 'easeInOut',
@@ -97,7 +53,9 @@ export default function Process() {
           className='conctact_options-whatsapp'
         >
           aquí.
-        </motion.a>
+        </motion.a> para agendar una llamada gratuita y comenzar tu
+        camino hacia tu mejor salud.
+
       </p>
     </div>
   )
