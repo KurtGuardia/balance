@@ -83,24 +83,6 @@ export default function Landing() {
         </div>
       </div>
       <div className='landing_content'>
-        {/* <motion.p
-          initial={{ opacity: 0, scale: 0.5, y: '120%' }}
-          whileInView={{ opacity: 1, scale: 1, y: '0%' }}
-          transition={{
-            duration: 1,
-            ease: 'easeOut',
-            opacity: {
-              duration: 1.8,
-            },
-          }}
-          viewport={{ margin: '100px' }}
-          className='landing_content-desc'
-        >
-          Atención nutricional personalizada, tomando en
-          cuenta la influencia de la alimentación en la
-          salud física, emocional y mental; y su relación
-          con la microbiota intestinal.
-        </motion.p> */}
         <Me />
         <Integrativa />
         <Services />

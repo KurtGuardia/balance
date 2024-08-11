@@ -37,7 +37,8 @@ export default function Me() {
             consciente”.
           </p>
           <p className='me_presentation_msg-name'>
-            <b>Victoria.</b> <br />
+            Victoria.
+            <br />
             <i> Balance - Nutrición Integrativa.</i>
           </p>
         </div>
@@ -82,7 +83,7 @@ export default function Me() {
                   Es la ciencia que estudia la comunicación
                   entre nuestros procesos psicológicos y los
                   sistemas que mantienen el equilibrio
-                  nuestro organismo: el sistema nervioso, el
+                  nuestro organismo: El sistema nervioso, el
                   endocrino y el inmune. De este campo nacen
                   las Terapias Mente-Cuerpo, intervenciones
                   que emplean diferentes técnicas para
@@ -90,7 +91,15 @@ export default function Me() {
                   afectar la función corporal. <br />
                   Esta rama de la salud está estrechamente
                   relacionada con otra de las áreas en las
-                  que decidí formarme
+                  que decidí formarme;{' '}
+                  <b
+                    onClick={() =>
+                      setMicrobiotaOpen(!microbiotaOpen)
+                    }
+                  >
+                    {' '}
+                    la microbiota intestinal.
+                  </b>
                 </p>
               </>
             )}
@@ -130,10 +139,11 @@ export default function Me() {
         El combinar e integrar la nutrición con estas áreas
         nos da la posibilidad de abordar la salud de una
         manera<b> holística </b>apoyándonos en una
-        alimentación y estilo de vida<b> consciente</b>. Consciente
-        con nosotros mismos y con nuestro entorno. Este es
-        el enfoque con el que me gustar brindar mis
-        servicios y que en Nutrición se lo conoce como:
+        alimentación y estilo de vida<b> consciente</b>.
+        Consciente con nosotros mismos y con nuestro
+        entorno. Este es el enfoque con el que me gustar
+        brindar mis servicios y que en Nutrición se lo
+        conoce como:
       </p>
     </div>
   )

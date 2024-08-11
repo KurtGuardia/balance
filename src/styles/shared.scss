@@ -1,13 +1,13 @@
 @import './variables.scss';
 
 b{
-    color: $dark-green;
+    color: $primary-color;
 }
 
 .overlay{
     position: fixed;
-    opacity: .75;
-    background-color: $black;
+    opacity: .70;
+    background-color: $cta-color;
     height: 100vh;
     width: 100vw;
     z-index: 90;

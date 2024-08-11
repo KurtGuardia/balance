@@ -77,14 +77,23 @@
             &-name {
                 text-align: center;
                 margin: auto;
+
+                @include bp($md) {
+                    margin: 15px 0;
+                }
+
+                & p {
+                    color: $black;
+                }
             }
         }
     }
 
     & p:first-of-type {
         margin-bottom: 0;
+
         & span {
-            color: $cta-color-2;
+            color: $dark-green;
             font-weight: bold;
             cursor: pointer;
             font-size: 90%;
@@ -120,7 +129,7 @@
 
             &-title {
                 font-weight: bold;
-                margin:0 0 20px;
+                margin: 0 0 20px;
                 width: fit-content;
 
                 @include bp($xl) {
@@ -142,6 +151,10 @@
                 @include bp($sm) {
                     width: 60%;
                 }
+            }
+
+            & b{
+                cursor: pointer;
             }
         }
     }
