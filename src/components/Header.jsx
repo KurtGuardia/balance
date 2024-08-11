@@ -108,6 +108,7 @@ export default function Header() {
           </ul>
         </div>
       )}
+      {(isSmallScreen && menuOpen) && <div className="overlay" onTouchStart={() => toggleMenu()}/>}
     </>
   )
 }
