@@ -60,10 +60,6 @@ export default function Landing() {
             <Logo />
           </motion.div>
         </motion.div>
-        {/* <h1 className='landing_hero_title'>Balance</h1>
-        <h2 className='landing_hero_subtitle'>
-          Nutrición Integrativa
-        </h2> */}
         <h1 className='landing_hero_title'>
           Nutrición Integrativa
         </h1>
