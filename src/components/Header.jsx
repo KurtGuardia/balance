@@ -18,7 +18,7 @@ export default function Header() {
     ['Nutrición Integrativa', 'integrativa'],
     ['Servicios', 'services'],
     ['Proceso', 'process'],
-    ['Products', 'products'],
+    ['Productos', 'products'],
   ]
 
   useEffect(() => {

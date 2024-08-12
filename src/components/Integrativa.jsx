@@ -1,8 +1,8 @@
 import '../styles/integrativa.scss'
-import img1 from '../imgs/1.png'
-import img2 from '../imgs/2.png'
+import img1 from '../imgs/1.jpg'
+import img2 from '../imgs/2.jpg'
 import img3 from '../imgs/3.png'
-import img4 from '../imgs/4.png'
+import img4 from '../imgs/4.jpg'
 import { motion } from 'framer-motion'
 
 export default function Integrativa() {
