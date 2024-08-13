@@ -1,42 +1,69 @@
 @import './variables.scss';
 
 .process {
+    padding: 0 100px;
 
-    &_content {
-        padding: 0 100px;
+    @include bp($md) {
+        padding: 0 50px;
     }
 
-    &_steps{
+    &_steps {
         display: flex;
         gap: 35px;
 
-        & img{
+        & img {
             width: 25%;
+
+            @include bp($md) {
+                display: none;
+            }
         }
 
-        &_step{
+        & h3 {
+            text-align: center;
+        }
+
+        &_step {
             margin: 30px 0;
             border-radius: 15px;
             padding: 20px;
-            color: $white;
-            background-color: $primary-color-2;
+            background-color: $beige;
 
-            & b{
-                color: $cta-color-2;
+            & b {
+                color: $cta-color;
             }
         }
     }
 
-    &_cta {    width: fit-content;
-        margin: 50px auto;
+    &_cta {
+        width: fit-content;
+        margin: 130px auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-size: 38px;
+
+    @include bp($md) {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+    }
+
         a {
             text-decoration: none;
-            color: $primary-color;
             font-weight: bold;
             font-size: 28px;
+            border-radius: 15px;
+            padding: 10px 30px;
+            margin: 15px 0;
+            font-size: 45px;
+            color: $white;
+            background-color: $primary-color;
 
             @include bp($sm) {
-                font-size: 20px;
+                font-size: 24px;
             }
 
         }

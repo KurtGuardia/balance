@@ -1,27 +1,54 @@
 @import './variables.scss';
 
 .products {
+    padding: 0 100px;
 
-    &_text {
-        margin: auto;
-        padding: 0 100px;
+    @include bp($md) {
+        padding: 0 50px;
+    }
+
+    @include bp($sm) {
+        padding: 0 40px;
+    }
+
+    &_content {
+        display: flex;
+        gap: 25px;
+
+        & img {
+            height: 100%;
+            width: 13%;
+
+            @include bp($md) {
+                width: 40%;
+                margin-top: 25px;
+            }
+        }
 
         @include bp($md) {
-            padding: 0 40px;
+            flex-direction: column;
+            align-items: center;
         }
+    }
 
-        div{
+    &_text {
+
+        div {
             text-align: center;
-        }
+            margin-top: 50px;
 
-        a {
-            text-decoration: none;
-            color: $primary-color;
-            font-weight: bold;
-            font-size: 28px;
+            a {
+                text-decoration: none;
+                color: $white;
+                background-color: $primary-color;
+                border-radius: 7px;
+                padding: 5px;
+                font-weight: bold;
+                font-size: 28px;
 
-            @include bp($sm) {
-                font-size: 20px;
+                @include bp($sm) {
+                    font-size: 20px;
+                }
             }
         }
     }

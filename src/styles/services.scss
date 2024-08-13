@@ -1,12 +1,6 @@
 @import './variables.scss';
 
 .services {
-    &_title {
-
-        @include bp($sm) {
-            margin-left: 10px;
-        }
-    }
 
     & ul {
         @include flex;

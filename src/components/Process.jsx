@@ -81,14 +81,11 @@ export default function Process() {
         </div>
 
         <div className='process_cta'>
-          Da click{' '}
+         <span>¡Comienza tu camino hacia una mejor salud!</span>
+         <span>Da click</span>
           <motion.a
-            initial={{
-              borderBottom: '2px solid transparent',
-            }}
             whileHover={{
-              borderBottom: '2px solid #a38b93',
-              color: '#a38b93',
+              color: '#eeddc9',
               transition: {
                 duration: 0.25,
                 ease: 'easeInOut',
@@ -101,10 +98,9 @@ export default function Process() {
             title='Click y envíame un mensaje en Whatsapp'
             className='conctact_options-whatsapp'
           >
-            aquí.
+            aquí
           </motion.a>{' '}
-          para agendar una llamada gratuita y comenzar tu
-          camino hacia tu mejor salud.
+         <span>Para agendar tu llamada <i>grauita.</i></span>
         </div>
       </div>
     </div>
