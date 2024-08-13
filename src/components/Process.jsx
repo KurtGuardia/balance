@@ -11,7 +11,7 @@ export default function Process() {
   return (
     <div className='process' id='process'>
       <h2 className='process_title'>
-        Proceso de atención y enfoque integrativo
+        Proceso de atención
       </h2>
       <div className='process_content'>
         <p>
@@ -82,7 +82,7 @@ export default function Process() {
 
         <div className='process_cta'>
          <span>¡Comienza tu camino hacia una mejor salud!</span>
-         <span>Da click</span>
+         <span>Haz click</span>
           <motion.a
             whileHover={{
               color: '#eeddc9',
@@ -100,7 +100,7 @@ export default function Process() {
           >
             aquí
           </motion.a>{' '}
-         <span>Para agendar tu llamada <i>grauita.</i></span>
+         <span>para agendar una llamada <i>gratuita.</i></span>
         </div>
       </div>
     </div>

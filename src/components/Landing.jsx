@@ -30,7 +30,7 @@ export default function Landing() {
       },
     },
     animanteBounce: {
-      y: ['0%', '4%'],
+      y: ['0%', '15%'],
       transition: {
         duration: 1,
         ease: 'easeOut',
@@ -66,7 +66,34 @@ export default function Landing() {
         </h1>
         <h2 className='landing_hero_subtitle'>
           Bienestar físico, emocional, mental y espiritual.{' '}
-        </h2>
+        </h2>{' '}
+        <motion.a
+          whileHover={{
+            color: '#eeddc9',
+            transition: {
+              duration: 1,
+              ease: 'easeInOut',
+            },
+          }}
+          initial={{ rotate: 0 }}
+          animate={{
+            rotate: [-0.5, 0.5],
+            transition: {
+              duration: 0.5,
+              ease: 'easeOut',
+              repeat: Infinity,
+              repeatType: 'reverse',
+            },
+          }}
+          href='https://wa.me/34634150027?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20lo%20siguiente:'
+          target='_blank'
+          rel='noreferrer'
+          title='Click y envíame un mensaje en Whatsapp'
+          className='landing_hero-topCta'
+        >
+          Haz click <span> aquí</span> para obtener una{' '}
+          <span>llamada gratuita</span>
+        </motion.a>
         <h3 className='landing_hero_desc'>
           Una nutrición adecuada es la base para mantener un
           buen estado de salud, prevenir enfermedades en el
@@ -88,7 +115,7 @@ export default function Landing() {
         <Integrativa />
         <Services />
         <Process />
-        <Products/>
+        <Products />
         <Contact />
       </div>
       <div className='landing_footer'>
@@ -97,15 +124,18 @@ export default function Landing() {
         </p>
         <div className='landing_footer-dev'>
           <p>Developed by:</p>
-          <motion.div whileHover={{ rotate: '-10deg' }}>
-            <a
-              href='https://www.kurtguardia.com'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Kurt Guardia
-            </a>
-          </motion.div>
+          <motion.a
+            href='https://www.kurtguardia.com'
+            target='_blank'
+            rel='noreferrer'
+            whileHover={{
+              rotate: '-10deg',
+              color: '#eeddc9',
+              fontFamily: "'Brown Sugar', 'Segoe Script', 'Segoe UI', 'Tahoma', 'Verdana', 'Courier New', cursive"
+            }}
+          >
+            Kurt Guardia
+          </motion.a>
         </div>
         <p className='landing_footer-copy'>
           &copy; All rights reserved

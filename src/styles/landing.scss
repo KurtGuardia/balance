@@ -66,6 +66,7 @@
         &_subtitle {
             color: $primary-color;
             font-size: 26px;
+            margin-bottom: 40px;
 
             @include bp($lg) {
                 font-size: 20px;
@@ -79,6 +80,30 @@
             @include bp($sm) {
                 font-size: 16px;
                 margin-top: 30px;
+            }
+        }
+
+        &-topCta {
+            background-color: $cta-color;
+            color: $white;
+            font-size: 26px;
+            padding: 10px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+
+            @include bp($md) {
+                padding: 7px 0;
+                width: 70%;
+                font-size: 20px;
+                margin: 30px 0;
+            }
+
+            & span {
+                font-weight: bold;
+
+                &:first-of-type {
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -102,6 +127,7 @@
 
         &_bottom {
             margin-top: 20px;
+
             &-text {
                 color: $white;
                 font-weight: bold;
@@ -151,16 +177,8 @@
         align-items: unset;
         flex-direction: column;
 
-        @include bp($xl) {
-            gap: 100px;
-        }
-
-        @include bp($lg) {
-            gap: 80px;
-        }
-
         @include bp($sm) {
-            gap: 50px;
+            gap: 80px;
         }
 
         &-desc {
@@ -207,35 +225,30 @@
             @include flex;
             gap: 10px;
             font-weight: bold;
+            width: 23%;
 
-            @include bp($md) {
-                & p {
-                    margin: 0;
-                }
-            }
-
-            &:hover {
-                & a {
-                    font-family: $Brown;
-                    color: $beige;
-                }
+            & p {
+                width: 130%;
             }
 
             & a {
-                width: 120%;
                 text-decoration: none;
                 color: $light-green;
                 letter-spacing: 2px;
+                width: 180%;
+            }
+
+            @include bp($md) {
+                width: auto;
+                & p {
+                    margin: 0;
+                    width: auto;
+                }
+
+                & a {
+                    width: auto;
+                }
             }
         }
-    }
-
-    & .overlay{
-        position: fixed;
-        opacity: .70;
-        background-color: $cta-color;
-        height: 100vh;
-        width: 100vw;
-        z-index: 90;
     }
 }

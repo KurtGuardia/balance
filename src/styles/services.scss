@@ -22,7 +22,13 @@
         padding: 30px;
         width: 18%;
 
-        & b{
+        &-title {
+            @include bp($md) {
+                text-align: center;
+            }
+        }
+
+        & b {
             color: $cta-color;
         }
 

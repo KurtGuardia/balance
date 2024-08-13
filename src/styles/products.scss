@@ -19,10 +19,19 @@
             height: 100%;
             width: 13%;
 
+            @include bp($lg) {
+                width: 20%;
+            }
+
             @include bp($md) {
                 width: 40%;
                 margin-top: 25px;
             }
+        }
+
+        @include bp($lg) {
+            align-items: center;
+            gap: 50px;
         }
 
         @include bp($md) {

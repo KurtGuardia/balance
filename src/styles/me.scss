@@ -48,9 +48,6 @@
         }
 
         &_msg {
-            & h2 {
-                margin: 0;
-            }
 
             &-quote {
                 font-weight: bold;
@@ -89,7 +86,6 @@
     }
 
     & p:first-of-type {
-        margin-bottom: 0;
 
         & span {
             color: $dark-green;
@@ -147,6 +143,16 @@
                     font-size: 20px;
                 }
             }
+
+            &-text{
+
+                & span {
+                    color: $dark-green;
+                    font-weight: bold;
+                    cursor: pointer;
+                    font-size: 90%;
+                    letter-spacing: -1px;
+                }}
 
             & img {
                 width: 30%;

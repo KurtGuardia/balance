@@ -91,15 +91,16 @@ export default function Me() {
                   afectar la función corporal. <br />
                   Esta rama de la salud está estrechamente
                   relacionada con otra de las áreas en las
-                  que decidí formarme;{' '}
-                  <b
+                  que decidí formarme; la <b>microbiota
+                  intestinal</b>{' '}
+                  <span
                     onClick={() =>
                       setMicrobiotaOpen(!microbiotaOpen)
                     }
                   >
-                    {' '}
-                    la microbiota intestinal.
-                  </b>
+                    (ver qué es)
+                  </span>
+                  .
                 </p>
               </>
             )}

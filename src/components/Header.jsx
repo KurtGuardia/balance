@@ -17,7 +17,7 @@ export default function Header() {
     ['Sobre Mí', 'me'],
     ['Nutrición Integrativa', 'integrativa'],
     ['Servicios', 'services'],
-    ['Proceso', 'process'],
+    ['Proceso de atención', 'process'],
     ['Productos', 'products'],
   ]
 
