@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from '../imgs/logo.svg'
-import img from '../imgs/bottom.jpg'
+import img from '../imgs/bottom.png'
 import '../styles/landing.scss'
 import Integrativa from './Integrativa'
 import Me from './Me'

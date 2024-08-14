@@ -120,8 +120,9 @@
             }
 
             @include bp($sm) {
-                font-size: 20px;
+                font-size: 18px;
                 width: 90%;
+                margin: 0;
             }
         }
 
@@ -145,12 +146,10 @@
 
                 @include bp($md) {
                     font-size: 28px;
-                    width: 35%;
                 }
 
                 @include bp($sm) {
-                    font-size: 20px;
-                    width: 15%;
+                    font-size: 20px;padding: 10px 0;
                 }
             }
 
@@ -158,13 +157,10 @@
                 width: 100%;
 
                 @include bp($md) {
-                    width: unset;
-                    transform: translateX(25%);
+                    width: 130%;
                 }
 
-                @include bp($sm) {
-                    transform: translateX(-15%);
-                }
+                @include bp($sm) {}
             }
         }
     }
@@ -240,6 +236,7 @@
 
             @include bp($md) {
                 width: auto;
+
                 & p {
                     margin: 0;
                     width: auto;
