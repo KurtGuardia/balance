@@ -9,14 +9,14 @@
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
-        height: 100vh;
+        // height: 100vh;
 
         @include bp($xl) {
-            height: 90vh;
+            // height: 90vh;
         }
 
         @include bp($md) {
-            height: 100vh;
+            // height: 100vh;
             overflow: hidden;
         }
 
@@ -221,10 +221,10 @@
             @include flex;
             gap: 10px;
             font-weight: bold;
-            width: 23%;
+            width: 30%;
 
             & p {
-                width: 130%;
+                width: 160%;
             }
 
             & a {
