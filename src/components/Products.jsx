@@ -1,6 +1,6 @@
 import '../styles/products.scss'
 import { motion } from 'framer-motion'
-import img from '../imgs/alimentacion.webp'
+import img from '../imgs/alimentacion.jpeg'
 
 const Products = () => {
   return (
