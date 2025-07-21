@@ -81,13 +81,11 @@ body {
 
   & .pill {
     display: inline-block;
-    padding: 20px 35px;
+    padding: 15px 35px;
     background-color: $cta-color;
     color: $beige;
     border-radius: 50px;
     text-align: center;
-    font-weight: bolder;
-    text-transform: uppercase;
 
     @include bp($md) {
       padding: 8px 16px;

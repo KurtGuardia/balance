@@ -2,250 +2,252 @@
 @import './fonts.css';
 
 .landing {
-    &_hero {
-        font-family: $Lit;
-        position: relative;
-        @include flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        // height: 100vh;
+  &_hero {
+    font-family: $Lit;
+    position: relative;
+    @include flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
 
-        @include bp($xl) {
-            // height: 90vh;
-        }
-
-        @include bp($md) {
-            // height: 100vh;
-            overflow: hidden;
-        }
-
-        &_logo {
-            margin: 50px 0;
-            width: 150px;
-
-            @include bp($lg) {
-                width: 100px;
-                margin: 30px 0;
-            }
-
-            @include bp($md) {
-                width: 30%;
-            }
-
-            & svg {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        &_title {
-            // font-size: 70px;
-            font-family: $Brown;
-            letter-spacing: 10px;
-            // background: linear-gradient(to bottom, $primary-color, $beige 50%, $cta-color);
-            // -webkit-background-clip: text;
-            // background-clip: text;
-            // -webkit-text-fill-color: transparent;
-
-            @include bp($lg) {
-                font-size: 60px;
-            }
-
-            @include bp($md) {
-                font-size: 50px;
-                width: 70%;
-                line-height: 120%;
-            }
-
-            @include bp($sm) {
-                font-size: 30px;
-            }
-        }
-
-        &_subtitle {
-            color: $primary-color;
-            font-size: 26px;
-            margin-bottom: 40px;
-
-            @include bp($lg) {
-                font-size: 20px;
-                margin: 0
-            }
-
-            @include bp($md) {
-                width: 70%;
-            }
-
-            @include bp($sm) {
-                font-size: 16px;
-                margin-top: 30px;
-            }
-        }
-
-        &-topCta {
-            background-color: $cta-color;
-            color: $white;
-            font-size: 26px;
-            padding: 10px 25px;
-            border-radius: 7px;
-            text-decoration: none;
-
-            @include bp($md) {
-                padding: 7px 0;
-                width: 70%;
-                font-size: 20px;
-                margin: 30px 0;
-            }
-
-            & span {
-                font-weight: bold;
-
-                &:first-of-type {
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        &_desc {
-            font-weight: bold;
-            width: 70%;
-
-            @include bp($xl) {
-                font-size: 28px;
-            }
-
-            @include bp($lg) {
-                font-size: 25px;
-            }
-
-            @include bp($sm) {
-                font-size: 18px;
-                width: 90%;
-                margin: 0;
-            }
-        }
-
-        &_bottom {
-            margin-top: 20px;
-
-            &-text {
-                color: $white;
-                font-weight: bold;
-                padding: 20px;
-                width: 75%;
-                font-size: 32px;
-                margin: auto;
-                background-color: $primary-color;
-                border-top-right-radius: 15px;
-                border-top-left-radius: 15px;
-
-                @include bp($lg) {
-                    font-size: 28px;
-                }
-
-                @include bp($md) {
-                    font-size: 28px;
-                }
-
-                @include bp($sm) {
-                    font-size: 20px;padding: 10px 0;
-                }
-            }
-
-            &-img {
-                width: 100%;
-
-                @include bp($md) {
-                    width: 130%;
-                }
-
-                @include bp($sm) {}
-            }
-        }
+    @include bp($xl) {
+      // height: 90vh;
     }
 
-    &_content {
-        background-color: $secondary-color;
-        position: relative;
-        @include flex;
-        gap: 150px;
-        align-items: unset;
-        flex-direction: column;
-
-        @include bp($sm) {
-            gap: 80px;
-        }
-
-        &-desc {
-            width: 70%;
-            font-weight: bold;
-            text-align: center;
-            align-self: center;
-            margin: 200px 0 100px;
-            font-size: 38px;
-            line-height: 200%;
-            letter-spacing: 3px;
-
-            @include bp($lg) {
-                font-size: 32px;
-                line-height: 150%;
-                margin: 100px 0 50px;
-            }
-
-            @include bp($sm) {
-                margin: 80px 10px;
-                font-size: 22px;
-                line-height: 150%;
-                letter-spacing: 1px;
-            }
-        }
+    @include bp($md) {
+      // height: 100vh;
+      overflow: hidden;
     }
 
-    &_footer {
-        @include flex;
-        justify-content: space-between;
-        padding: 8px 50px;
-        background-color: $cta-color;
+    &_logo {
+      margin: 50px 0;
+      width: 150px;
+
+      @include bp($lg) {
+        width: 100px;
+        margin: 30px 0;
+      }
+
+      @include bp($md) {
+        width: 30%;
+      }
+
+      & svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &_title {
+      // font-size: 70px;
+      font-family: $Brown;
+      letter-spacing: 10px;
+      // background: linear-gradient(to bottom, $primary-color, $beige 50%, $cta-color);
+      // -webkit-background-clip: text;
+      // background-clip: text;
+      // -webkit-text-fill-color: transparent;
+
+      @include bp($lg) {
+        font-size: 60px;
+      }
+
+      @include bp($md) {
+        font-size: 50px;
+        width: 70%;
+        line-height: 120%;
+      }
+
+      @include bp($sm) {
+        font-size: 30px;
+      }
+    }
+
+    &_subtitle {
+      color: $primary-color;
+      font-size: 26px;
+      margin-bottom: 40px;
+
+      @include bp($lg) {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      @include bp($md) {
+        width: 70%;
+      }
+
+      @include bp($sm) {
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    }
+
+    &-topCta {
+      background-color: $cta-color;
+      color: $white;
+      font-size: 26px;
+      padding: 10px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+
+      @include bp($md) {
+        padding: 7px 0;
+        width: 70%;
+        font-size: 20px;
+        margin: 30px 0;
+      }
+
+      & span {
+        font-weight: bold;
+
+        &:first-of-type {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &_desc {
+      font-weight: bold;
+      width: 70%;
+
+      @include bp($xl) {
+        font-size: 28px;
+      }
+
+      @include bp($lg) {
+        font-size: 25px;
+      }
+
+      @include bp($sm) {
+        font-size: 18px;
+        width: 90%;
+        margin: 0;
+      }
+    }
+
+    &_bottom {
+      margin-top: 20px;
+
+      &-text {
         color: $white;
+        font-weight: bold;
+        padding: 20px;
+        width: 75%;
+        font-size: 32px;
+        margin: auto;
+        background-color: $primary-color;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
 
         @include bp($lg) {
-            padding: 0 20px;
+          font-size: 28px;
         }
 
         @include bp($md) {
-            flex-direction: column
+          font-size: 28px;
         }
 
-        &-dev {
-            @include flex;
-            gap: 10px;
-            font-weight: bold;
-            width: 30%;
-
-            & p {
-                width: 160%;
-            }
-
-            & a {
-                text-decoration: none;
-                color: $light-green;
-                letter-spacing: 2px;
-                width: 180%;
-            }
-
-            @include bp($md) {
-                width: auto;
-
-                & p {
-                    margin: 0;
-                    width: auto;
-                }
-
-                & a {
-                    width: auto;
-                }
-            }
+        @include bp($sm) {
+          font-size: 20px;
+          padding: 10px 0;
         }
+      }
+
+      &-img {
+        width: 100%;
+
+        @include bp($md) {
+          width: 130%;
+        }
+
+        @include bp($sm) {
+        }
+      }
     }
+  }
+
+  &_content {
+    background-color: $secondary-color;
+    position: relative;
+    @include flex;
+    gap: 150px;
+    align-items: unset;
+    flex-direction: column;
+
+    @include bp($sm) {
+      gap: 80px;
+    }
+
+    &-desc {
+      width: 70%;
+      font-weight: bold;
+      text-align: center;
+      align-self: center;
+      margin: 200px 0 100px;
+      font-size: 38px;
+      line-height: 200%;
+      letter-spacing: 3px;
+
+      @include bp($lg) {
+        font-size: 32px;
+        line-height: 150%;
+        margin: 100px 0 50px;
+      }
+
+      @include bp($sm) {
+        margin: 80px 10px;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  &_footer {
+    @include flex;
+    justify-content: space-between;
+    padding: 8px 50px;
+    background-color: $cta-color;
+    color: $white;
+
+    @include bp($lg) {
+      padding: 0 20px;
+    }
+
+    @include bp($md) {
+      flex-direction: column;
+    }
+
+    &-dev {
+      @include flex;
+      gap: 10px;
+      font-weight: bold;
+      width: 30%;
+
+      & p {
+        width: 160%;
+      }
+
+      & a {
+        text-decoration: none;
+        color: $light-green;
+        letter-spacing: 2px;
+        width: 180%;
+      }
+
+      @include bp($md) {
+        width: auto;
+
+        & p {
+          margin: 0;
+          width: auto;
+        }
+
+        & a {
+          width: auto;
+        }
+      }
+    }
+  }
 }
