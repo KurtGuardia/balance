@@ -1,44 +1,79 @@
 @import './variables.scss';
 
 .services {
+  @include flex;
+  flex-direction: column;
+  align-items: center;
 
-    & ul {
-        @include flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        gap: 50px;
-        width: 100%;
-        list-style: none;
-        padding: 0;
+  &__item {
+    @include flex;
 
-        @include bp($xxl) {
-            gap: 30px;
-        }
+    p {
+      width: 60%;
+    }
+  }
+
+  h4 {
+    width: max-content;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $cta-color;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    &-item {
+      position: relative;
+      padding-left: 20px;
+      margin: 10px 0;
+
+      &:before {
+        content: '➡️';
+        position: absolute;
+        left: -20px;
+      }
+    }
+  }
+
+  &__msg {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 130px 0 0 0;
+    color: $cta-color;
+  }
+
+  &__image {
+    border-radius: 15px;
+    width: 400px;
+    height: auto;
+    margin: 50px 80px;
+
+    &--rounded {
+      border-radius: 50%;
+      border: 5px solid $cta-color;
+      width: 200px;
+      margin: 0 50px;
     }
 
-    &_service {
-        background-color: $beige;
-        border-radius: 25px;
-        padding: 30px;
-        width: 18%;
-
-        &-title {
-            @include bp($md) {
-                text-align: center;
-            }
-        }
-
-        & b {
-            color: $cta-color;
-        }
-
-        @include bp($xl) {
-            width: 35%;
-        }
-
-        @include bp($xl) {
-            width: 75%;
-            padding: 20px;
-        }
+    @include bp($md) {
+      width: 300px;
     }
+  }
+
+  & .pill {
+    margin-bottom: 80px;
+  }
 }

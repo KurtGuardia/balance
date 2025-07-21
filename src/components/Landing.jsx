@@ -62,10 +62,10 @@ export default function Landing() {
           </motion.div>
         </motion.div>
         <h1 className='landing_hero_title'>
-          Nutrición Integrativa
+          Nutrición Funcional Integrativa
         </h1>
         <h2 className='landing_hero_subtitle'>
-          Bienestar físico, emocional, mental y espiritual.{' '}
+          SALUD DIGESTIVA, MENTAL Y EMOCIONAL{' '}
         </h2>{' '}
         <motion.a
           whileHover={{
@@ -85,23 +85,23 @@ export default function Landing() {
               repeatType: 'reverse',
             },
           }}
-          href='https://wa.me/34634150027?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20lo%20siguiente:'
+          href='https://wa.me/34634150027?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20agendar%20una%20valoración%20gratuita%2C%20por%20favor:'
           target='_blank'
           rel='noreferrer'
           title='Click y envíame un mensaje en Whatsapp'
           className='landing_hero-topCta'
         >
           Haz click <span> aquí</span> para obtener una{' '}
-          <span>llamada gratuita</span>
+          <span>valoración gratuita</span>
         </motion.a>
         <h3 className='landing_hero_desc'>
-          Una nutrición adecuada es la base para mantener un
-          buen estado de salud, prevenir enfermedades en el
-          futuro y promover el bienestar a largo plazo.
+          Recupera tu digestión, escucha a tu cuerpo, calma
+          tu mente… y vuelve a TI.
         </h3>
         <div className='landing_hero_bottom'>
           <div className='landing_hero_bottom-text'>
-            Esp. Microbiota - PNIE
+            MSc. en Microbiota y Probióticos - Esp.
+            Nutrición Emocional.
           </div>
           <img
             src={img}
@@ -131,7 +131,8 @@ export default function Landing() {
             whileHover={{
               rotate: '-10deg',
               color: '#eeddc9',
-              fontFamily: "'Brown Sugar', 'Segoe Script', 'Segoe UI', 'Tahoma', 'Verdana', 'Courier New', cursive"
+              fontFamily:
+                "'Brown Sugar', 'Segoe Script', 'Segoe UI', 'Tahoma', 'Verdana', 'Courier New', cursive",
             }}
           >
             Kurt Guardia

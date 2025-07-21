@@ -1,29 +1,12 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/services.scss'
+import Digestion from '../imgs/digestion.webp'
+import Intestino from '../imgs/intestino.webp'
+import Bienestar from '../imgs/bienestar.jpg'
 
 const hoverAnimation = {
-  whileHover: { y: '-15px' },
+  whileHover: { y: '-3px' },
 }
-
-const services = [
-  {
-    title: 'Salud Metabólica',
-    text: 'Si tienes <b>alguna condición o enfermedad</b> que deseas mejorar: Sobre peso, diabetes, resistencia a la insulina, Síndrome de Ovario Poliquístico (SOP), hipertensión, triglicéridos y/o colesterol elevado, puedo ayudarte.',
-  },
-  {
-    title: 'Aparato digestivo y Microbiota',
-    text: 'Si experimentas síntomas como <b>hinchazón y/o distensión abdominal</b>, inflamación, constipación, sensación de pesadez, o <b>SIBO</b>. Puedo ayudarte <b>a través de mi método integrativo</b>, trabajaremos juntxs para <b>mejorar la salud de tu aparato digestivo y equilibrar tu microbiota</b>, devolviendo a tu cuerpo el <b>balance</b>.',
-  },
-  {
-    title: 'Hábitos y estilo de Vida Saludable',
-    text: 'Tu bienestar es el resultado de los hábitos que cultivas cada día. Si lo que estas buscando es mejorar tus hábitos alimentarios y estilo de vida, estas en el lugar correcto. Para mejorar tu salud a largo plazo te ofrezco un enfoque con aspectos clave como: <b>Alimentación consciente, relación con la comida, gestión del estrés y emociones, movimiento, sueño reparador e higiene mental</b>.',
-  },
-  {
-    title: 'Nutrición Vegetariana/Vegana',
-    text: 'Si has escogido un estilo de vida <b>libre de productos animales</b> y necesitas orientación en que alimentos escoger y como combinarlos para tener un aporte adecuado de nutrientes, esto es para ti.',
-  },
-]
 
 export default function Services() {
   return (
@@ -31,25 +14,95 @@ export default function Services() {
       <h2 className='services_title'>
         En que puedo ayudarte:
       </h2>
-      <ul>
-        {services.map((service, index) => (
-          <motion.li
-            key={index}
-            {...hoverAnimation}
-            className='services_service'
-          >
-            <h3 className='services_service-title'>
-              {service.title}
-            </h3>
-            <p
-              className='services_service-text'
-              dangerouslySetInnerHTML={{
-                __html: service.text,
-              }}
-            />
-          </motion.li>
-        ))}
-      </ul>
+      <div className='pill pill_wide'>
+        Salud digestiva y Microbiota
+      </div>
+      <div className='services__item'>
+        <img
+          src={Digestion}
+          alt='mujer con hinchazón abdominal'
+          className='services__image'
+        />
+        <div>
+          <h4>Si experimentas:</h4>
+          <ul className='services__list'>
+            <motion.li
+              {...hoverAnimation}
+              className='services__list-item'
+            >
+              Hinchazón abdominal
+            </motion.li>
+            <motion.li
+              {...hoverAnimation}
+              className='services__list-item'
+            >
+              Inflamación
+            </motion.li>
+            <motion.li
+              {...hoverAnimation}
+              className='services__list-item'
+            >
+              Estreñimiento
+            </motion.li>
+            <motion.li
+              {...hoverAnimation}
+              className='services__list-item'
+            >
+              Sensación de pesadez u otros trastornos
+              digestivos
+            </motion.li>
+          </ul>
+        </div>
+      </div>
+      <div className='services__item'>
+        <div>
+          <h4>Si te han diagnosticado:</h4>
+          <ul className='services__list'>
+            <motion.li
+              {...hoverAnimation}
+              className='services__list-item'
+            >
+              Intestino irritable
+            </motion.li>
+            <motion.li
+              {...hoverAnimation}
+              className='services__list-item'
+            >
+              SIBO
+            </motion.li>
+            <motion.li
+              {...hoverAnimation}
+              className='services__list-item'
+            >
+              IMO
+            </motion.li>
+          </ul>
+        </div>{' '}
+        <img
+          src={Intestino}
+          alt='mujer sosteniendo un dibujo de intestino'
+          className='services__image'
+        />
+      </div>
+      <p className='services__msg'>
+        Puedo ayudarte con mi Método: RecuperarTE
+      </p>
+      <div className='services__item'>
+        <img
+          src={Bienestar}
+          alt='mujer formando un corazón con sus manos sobre su estómago'
+          className='services__image services__image--rounded'
+        />
+        <p>
+          Acompañamiento de 8 semanas para
+          <b>liberarte de la hinchazón</b>, volver a ir al
+          baño con <b>regularidad y sentirte más liviana</b>
+          , con
+          <b>calma, energía y conexión con tu cuerpo</b> —
+          todo desde una alimentación adaptada a ti, tu
+          historia y tu bienestar emocional.
+        </p>
+      </div>
     </div>
   )
 }

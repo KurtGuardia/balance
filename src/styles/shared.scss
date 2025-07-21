@@ -43,10 +43,6 @@ body {
     }
   }
 
-  b {
-    color: $primary-color;
-  }
-
   p {
     text-align: justify;
 
@@ -81,5 +77,24 @@ body {
     height: 100vh;
     width: 100vw;
     z-index: 90;
+  }
+
+  & .pill {
+    display: inline-block;
+    padding: 20px 35px;
+    background-color: $cta-color;
+    color: $beige;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    @include bp($md) {
+      padding: 8px 16px;
+    }
+
+    &_wide {
+      width: 80%;
+    }
   }
 }

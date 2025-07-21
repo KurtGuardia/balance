@@ -10,9 +10,7 @@ const hoverAnimation = {
 export default function Process() {
   return (
     <div className='process' id='process'>
-      <h2 className='process_title'>
-        Proceso de atención
-      </h2>
+      <h2 className='process_title'>Proceso de atención</h2>
       <div className='process_content'>
         <p>
           Mi enfoque se basa en el método de Nutrición
@@ -81,8 +79,10 @@ export default function Process() {
         </div>
 
         <div className='process_cta'>
-         <span>¡Comienza tu camino hacia una mejor salud!</span>
-         <span>Haz click</span>
+          <span>
+            ¡Comienza tu camino hacia una mejor salud!
+          </span>
+          <span>Haz click</span>
           <motion.a
             whileHover={{
               color: '#eeddc9',
@@ -91,7 +91,7 @@ export default function Process() {
                 ease: 'easeInOut',
               },
             }}
-            href='https://wa.me/34634150027?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20lo%20siguiente:
+            href='https://wa.me/34634150027?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20agendar%20una%20valoración%20gratuita,%20por favor:
 '
             target='_blank'
             rel='noreferrer'
@@ -100,7 +100,9 @@ export default function Process() {
           >
             aquí
           </motion.a>{' '}
-         <span>para agendar una llamada <i>gratuita.</i></span>
+          <span>
+            para agendar una llamada <i>gratuita.</i>
+          </span>
         </div>
       </div>
     </div>
