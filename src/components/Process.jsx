@@ -39,48 +39,53 @@ export default function Process() {
             {...hoverAnimation}
           >
             Evaluación completa de tus síntomas,
-            alimentación, hábitos y emociones
+            <b> alimentación, hábitos y emociones</b>
           </motion.li>
           <motion.li
             className='process_list-item'
             {...hoverAnimation}
           >
-            Guía de alimentación personalizada (listas de
-            alimentos, porciones sugeridas, menús, recetas y
-            más)
+            <b>Guía de alimentación</b> personalizada
+            (listas de alimentos, porciones sugeridas,
+            menús, recetas y más)
           </motion.li>
           <motion.li
             className='process_list-item'
             {...hoverAnimation}
           >
-            Herramientas mente-cuerpo: coaching, PNL,
+            <b>Herramientas mente-cuerpo:</b> coaching, PNL,
             hipnosis y mindfulness
           </motion.li>
           <motion.li
             className='process_list-item'
             {...hoverAnimation}
           >
-            Apoyos naturales y estrategias para regular tu
-            sistema digestivo y nervioso.
+            <b>Apoyos naturales</b>{' '}
+            (suplementos/fisioterapia) estrategias para
+            equilibrar tu microbiota, regular tu{' '}
+            <b>sistema digestivo y nervioso.</b>
           </motion.li>
           <motion.li
             className='process_list-item'
             {...hoverAnimation}
           >
-            Seguimiento semanal y acompañamiento por
-            WhatsApp.
+            <b>
+              Seguimiento semanal y acompañamiento por
+              WhatsApp.
+            </b>
           </motion.li>
           <motion.li
             className='process_list-item'
             {...hoverAnimation}
           >
-            Materiales prácticos: guías, meditaciones y
-            ejercicios.
+            <b>Materiales prácticos:</b> guías, meditaciones
+            y ejercicios.
           </motion.li>
         </ul>
       </div>
 
       <div className='process_cta'>
+        <p>¿Quieres saber si este proceso es para ti?</p>
         <span>
           Agenda una <b>llamada gratuita de valoración</b>,
           conversamos sobre tu caso y te cuento cómo podemos
