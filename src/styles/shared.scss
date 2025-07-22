@@ -87,7 +87,7 @@ body {
     text-align: center;
 
     @include bp($md) {
-      padding: 8px 16px;
+      padding: 10px 20px;
     }
 
     &_wide {

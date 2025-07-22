@@ -32,58 +32,52 @@ export default function Process() {
       </p>
 
       <div className='process_content'>
-        {/* <img
-          src={img}
-          alt='Delicioso y nutritivo plato de muestra'
-        /> */}
-        <span>
-          <h4>Trabajamos juntas con:</h4>
-          <ul className='process_list'>
-            <motion.li
-              className='process_list-item'
-              {...hoverAnimation}
-            >
-              Evaluación completa de tus síntomas,
-              alimentación, hábitos y emociones
-            </motion.li>
-            <motion.li
-              className='process_list-item'
-              {...hoverAnimation}
-            >
-              Guía de alimentación personalizada (listas de
-              alimentos, porciones sugeridas, menús, recetas
-              y más)
-            </motion.li>
-            <motion.li
-              className='process_list-item'
-              {...hoverAnimation}
-            >
-              Herramientas mente-cuerpo: coaching, PNL,
-              hipnosis y mindfulness
-            </motion.li>
-            <motion.li
-              className='process_list-item'
-              {...hoverAnimation}
-            >
-              Apoyos naturales y estrategias para regular tu
-              sistema digestivo y nervioso.
-            </motion.li>
-            <motion.li
-              className='process_list-item'
-              {...hoverAnimation}
-            >
-              Seguimiento semanal y acompañamiento por
-              WhatsApp.
-            </motion.li>
-            <motion.li
-              className='process_list-item'
-              {...hoverAnimation}
-            >
-              Materiales prácticos: guías, meditaciones y
-              ejercicios.
-            </motion.li>
-          </ul>
-        </span>
+        <h4>Trabajamos juntas con:</h4>
+        <ul className='process_list'>
+          <motion.li
+            className='process_list-item'
+            {...hoverAnimation}
+          >
+            Evaluación completa de tus síntomas,
+            alimentación, hábitos y emociones
+          </motion.li>
+          <motion.li
+            className='process_list-item'
+            {...hoverAnimation}
+          >
+            Guía de alimentación personalizada (listas de
+            alimentos, porciones sugeridas, menús, recetas y
+            más)
+          </motion.li>
+          <motion.li
+            className='process_list-item'
+            {...hoverAnimation}
+          >
+            Herramientas mente-cuerpo: coaching, PNL,
+            hipnosis y mindfulness
+          </motion.li>
+          <motion.li
+            className='process_list-item'
+            {...hoverAnimation}
+          >
+            Apoyos naturales y estrategias para regular tu
+            sistema digestivo y nervioso.
+          </motion.li>
+          <motion.li
+            className='process_list-item'
+            {...hoverAnimation}
+          >
+            Seguimiento semanal y acompañamiento por
+            WhatsApp.
+          </motion.li>
+          <motion.li
+            className='process_list-item'
+            {...hoverAnimation}
+          >
+            Materiales prácticos: guías, meditaciones y
+            ejercicios.
+          </motion.li>
+        </ul>
       </div>
 
       <div className='process_cta'>
