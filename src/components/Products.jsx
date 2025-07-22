@@ -2,9 +2,24 @@ import '../styles/products.scss'
 import { motion } from 'framer-motion'
 import img from '../imgs/alimentacion.jpeg'
 
+const motionProps = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true },
+  transition: {
+    duration: 0.5,
+    ease: 'easeIn',
+    delay: 0.5,
+  },
+}
+
 const Products = () => {
   return (
-    <div className='products' id='products'>
+    <motion.div
+      {...motionProps}
+      className='products'
+      id='products'
+    >
       <h2 className='products_title'>Productos</h2>
       <div className='products_content'>
         <p className='products_text'>
@@ -53,7 +68,7 @@ const Products = () => {
           alt='Portada de Alimentación que te cuida por Victoria Espada.'
         />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -82,8 +82,7 @@ body {
   & .pill {
     display: inline-block;
     padding: 15px 35px;
-    background-color: $cta-color;
-    color: $beige;
+    background-color: $beige;
     border-radius: 50px;
     text-align: center;
 
@@ -92,7 +91,19 @@ body {
     }
 
     &_wide {
-      width: 80%;
+      width: 70%;
+    }
+
+    &_cta {
+      background-color: $cta-color;
+      color: $beige;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        // background-color: darken($cta-color, 5%);
+        background-color: $primary-color;
+        color: $white;
+      }
     }
   }
 }

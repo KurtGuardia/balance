@@ -26,11 +26,14 @@
       position: relative;
       margin: 15px 0;
 
-      // &:before {
-      //   content: '➡️';
-      //   position: absolute;
-      //   left: -20px;
-      // }
+      &:before {
+        content: '✓';
+        position: absolute;
+        left: -30px;
+        color: $cta-color;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
     }
   }
 

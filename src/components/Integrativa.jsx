@@ -5,18 +5,17 @@ import img3 from '../imgs/3.png'
 import img4 from '../imgs/4.jpg'
 import { motion } from 'framer-motion'
 
+const motionProps = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true },
+  transition: {
+    duration: 0.5,
+    ease: 'easeIn',
+    delay: 0.5,
+  },
+}
 export default function Integrativa() {
-  const motionProps = {
-    initial: { opacity: 0 },
-    whileInView: { opacity: 1 },
-    viewport: { once: true },
-    transition: {
-      duration: 0.5,
-      ease: 'easeIn',
-      delay: 0.5,
-    },
-  }
-
   const listItems = [
     {
       imgSrc: img1,
@@ -41,10 +40,7 @@ export default function Integrativa() {
   ]
 
   return (
-    <div
-      className='integrativa'
-      id='integrativa'
-    >
+    <div className='integrativa' id='integrativa'>
       <motion.h2
         {...motionProps}
         className='integrativa-title'

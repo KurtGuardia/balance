@@ -8,9 +8,24 @@ const hoverAnimation = {
   whileHover: { y: '-3px' },
 }
 
+const motionProps = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true },
+  transition: {
+    duration: 0.5,
+    ease: 'easeIn',
+    delay: 0.5,
+  },
+}
+
 export default function Services() {
   return (
-    <div className='services' id='services'>
+    <motion.div
+      {...motionProps}
+      className='services'
+      id='services'
+    >
       <h2>En que puedo ayudarte:</h2>
       <div className='pill pill_wide'>
         Salud digestiva y Microbiota
@@ -101,6 +116,6 @@ export default function Services() {
           historia y tu bienestar emocional.
         </p>
       </div>
-    </div>
+    </motion.div>
   )
 }

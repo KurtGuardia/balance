@@ -40,11 +40,12 @@ export default function Landing() {
     },
   }
 
-  const currentDate = new Date()
-  const month = currentDate.toLocaleString('default', {
+  const lastMonthDate = new Date()
+  lastMonthDate.setMonth(lastMonthDate.getMonth() - 1)
+  const month = lastMonthDate.toLocaleString('default', {
     month: 'long',
   })
-  const year = currentDate.getFullYear()
+  const year = lastMonthDate.getFullYear()
 
   return (
     <div className='landing' id='top'>
