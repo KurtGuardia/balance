@@ -1,7 +1,6 @@
 import { ReactComponent as Logo } from '../imgs/logo.svg'
 import img from '../imgs/bottom.png'
 import '../styles/landing.scss'
-import Integrativa from './Integrativa'
 import Me from './Me'
 import Services from './Services'
 import Process from './Process'
@@ -100,10 +99,6 @@ export default function Landing() {
           tu mente… y vuelve a TI.
         </h3>
         <div className='landing_hero_bottom'>
-          <div className='landing_hero_bottom-text'>
-            MSc. en Microbiota y Probióticos - Esp.
-            Nutrición Emocional.
-          </div>
           <img
             src={img}
             alt='wide range of healthy food'
@@ -113,7 +108,6 @@ export default function Landing() {
       </div>
       <div className='landing_content'>
         <Me />
-        <Integrativa />
         <Services />
         <Process />
         <Products />

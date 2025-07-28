@@ -43,7 +43,7 @@ export default function Services() {
               {...hoverAnimation}
               className='services_list-item'
             >
-              Hinchazón abdominal
+              <b> Hinchazón </b> abdominal
             </motion.li>
             <motion.li
               {...hoverAnimation}
@@ -55,7 +55,7 @@ export default function Services() {
               {...hoverAnimation}
               className='services_list-item'
             >
-              Estreñimiento
+              <b>Estreñimiento</b>
             </motion.li>
             <motion.li
               {...hoverAnimation}
@@ -75,7 +75,7 @@ export default function Services() {
               {...hoverAnimation}
               className='services_list-item'
             >
-              Intestino irritable
+              <b> Intestino</b> irritable
             </motion.li>
             <motion.li
               {...hoverAnimation}

@@ -1,20 +1,22 @@
 import '../styles/me.scss'
+import Integrativa from './Integrativa'
 import vic from '../imgs/Victoria.jpg'
+import firma from '../imgs/firma.png'
 import PNIE from '../imgs/PNIE.webp'
 import microbiota from '../imgs/microbiota.webp'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 export default function Me() {
-  const [pnieOpen, setPnieOpen] = useState(false)
-  const [microbiotaOpen, setMicrobiotaOpen] =
-    useState(false)
+  const [aboutMeOpen, setAboutMeOpen] = useState(false)
+  const [aboutNutrOpen, setAboutNutrOpen] = useState(false)
 
   return (
     <div className='me' id='me'>
       <div className='me_presentation'>
         <div className='me_presentation_picture'>
           <motion.img
+            className='picture'
             initial={{ y: '50%', opacity: 0 }}
             viewport={{ once: true }}
             whileInView={{ y: '0%', opacity: 1 }}
@@ -27,55 +29,71 @@ export default function Me() {
             src={vic}
             alt='Foto de Victoria Espada'
           />
+          <motion.img
+            className='firma'
+            initial={{ y: '50%', opacity: 0 }}
+            viewport={{ once: true }}
+            whileInView={{ y: '0%', opacity: 1 }}
+            transition={{
+              duration: 1,
+              delay: 1,
+              opacity: {
+                duration: 3,
+              },
+            }}
+            src={firma}
+            alt='Firma de Victoria Espada'
+          />
         </div>
         <div className='me_presentation_msg'>
           <h2>Sobre mí</h2>
           <p className='me_presentation_msg-quote'>
-            “Te proporciono herramientas y estrategias para
-            ser dueño de tu salud y te acompaño en el
-            proceso hacia una vida más saludable y
-            consciente”.
+            “Estoy aquí para acompañarte a recuperar tu
+            digestión y volver a habitar tu cuerpo con calma
+            y confianza.” 🤍
           </p>
-          <p className='me_presentation_msg-name'>
-            Victoria.
-            <br />
-            <i> Balance - Nutrición Integrativa.</i>
-          </p>
+          <ul className='me_presentation_msg-text'>
+            <li>Lic. Nutrición y Dietética</li>
+            <li>MSc. Microbiota y probióticos</li>
+            <li>Esp. Nutrición Emocional</li>
+            <li>Certif. PNIE</li>
+          </ul>
         </div>
       </div>
-      <p>
-        Estudié Nutrición y Dietética ya que considero que
-        la Nutrición es la base fundamental de la salud,
-        tanto física como mental. Siempre me ha gustado
-        entregar una atención personalizada de acuerdo con
-        las características de cada paciente, sin embargo,
-        sentía que faltaban piezas fundamentales para un
-        <b> entendimiento más profundo de la salud; </b> es
-        así como decidí formarme en dos apasionantes áreas,
-        la
-        <b> psico-neuro-inmuno-endocrinología</b>
-        <span onClick={() => setPnieOpen(!pnieOpen)}>
-          {' '}
-          (ver qué es){' '}
-        </span>
-        y la <b> microbiota intestinal </b>
-        <span
-          onClick={() => setMicrobiotaOpen(!microbiotaOpen)}
+      <div className='me_content'>
+        <p
+          className='me_content-title'
+          onClick={() => setAboutMeOpen(!aboutMeOpen)}
+          onKeyDown={() => setAboutMeOpen(!aboutMeOpen)}
+          role='button'
+          tabIndex={0}
         >
-          (ver qué es)
-        </span>
-        , que son clave y que están muy relacionadas con el
-        estado de salud de cualquier persona
-      </p>
-      {(pnieOpen || microbiotaOpen) && (
-        <div className='me_areas'>
-          <div className='me_areas_area'>
-            {pnieOpen && (
-              <>
-                <p
-                  className='me_areas_area-title'
-                  onClick={() => setPnieOpen(!pnieOpen)}
-                >
+          Conoce más sobre mí
+        </p>
+        {aboutMeOpen && (
+          <>
+            <p className='me_content-text'>
+              Estudié Nutrición y Dietética ya que considero
+              que la Nutrición es la base fundamental de la
+              salud, tanto física como mental. Siempre me ha
+              gustado entregar una atención personalizada de
+              acuerdo con las características de cada
+              paciente, sin embargo, sentía que faltaban
+              piezas fundamentales para un
+              <b>
+                {' '}
+                entendimiento más profundo de la salud;{' '}
+              </b>{' '}
+              es así como decidí formarme en dos
+              apasionantes áreas, la
+              <b> psico-neuro-inmuno-endocrinología</b>y la{' '}
+              <b> microbiota intestinal </b>, que son clave
+              y que están muy relacionadas con el estado de
+              salud de cualquier persona
+            </p>
+            <div className='me_areas'>
+              <div className='me_areas_area'>
+                <p className='me_areas_area-title'>
                   La Psiconeuroinmunoendocrinología (PNIE):
                 </p>
                 <img src={PNIE} alt='PNIE ciclo' />
@@ -91,29 +109,12 @@ export default function Me() {
                   afectar la función corporal. <br />
                   Esta rama de la salud está estrechamente
                   relacionada con otra de las áreas en las
-                  que decidí formarme; la <b>microbiota
-                  intestinal</b>{' '}
-                  <span
-                    onClick={() =>
-                      setMicrobiotaOpen(!microbiotaOpen)
-                    }
-                  >
-                    (ver qué es)
-                  </span>
-                  .
+                  que decidí formarme; la{' '}
+                  <b>microbiota intestinal</b> .
                 </p>
-              </>
-            )}
-          </div>
-          <div className='me_areas_area'>
-            {microbiotaOpen && (
-              <>
-                <p
-                  className='me_areas_area-title'
-                  onClick={() =>
-                    setMicrobiotaOpen(!microbiotaOpen)
-                  }
-                >
+              </div>
+              <div className='me_areas_area'>
+                <p className='me_areas_area-title'>
                   La Microbiota intestinal:
                 </p>
 
@@ -131,21 +132,33 @@ export default function Me() {
                   emocional, pilares fundamentales del
                   bienestar de todo ser humano.
                 </p>
-              </>
-            )}
-          </div>
-        </div>
-      )}
-      <p>
-        El combinar e integrar la nutrición con estas áreas
-        nos da la posibilidad de abordar la salud de una
-        manera<b> holística </b>apoyándonos en una
-        alimentación y estilo de vida<b> consciente</b>.
-        Consciente con nosotros mismos y con nuestro
-        entorno. Este es el enfoque con el que me gustar
-        brindar mis servicios y que en Nutrición se lo
-        conoce como:
-      </p>
+              </div>
+            </div>
+            <p className='me_content-text'>
+              El combinar e integrar la nutrición con estas
+              áreas nos da la posibilidad de abordar la
+              salud de una manera<b> holística </b>
+              apoyándonos en una alimentación y estilo de
+              vida<b> consciente</b>. Consciente con
+              nosotros mismos y con nuestro entorno. Este es
+              el enfoque con el que me gustar brindar mis
+              servicios y que en Nutrición se lo conoce
+              como:
+            </p>
+          </>
+        )}
+
+        <p
+          className='me_content-title'
+          onClick={() => setAboutNutrOpen(!aboutNutrOpen)}
+          onKeyDown={() => setAboutNutrOpen(!aboutNutrOpen)}
+          role='button'
+          tabIndex={0}
+        >
+          Conoce más sobre Nutrición Funcional Integrativa
+        </p>
+        {aboutNutrOpen && <Integrativa />}
+      </div>
     </div>
   )
 }

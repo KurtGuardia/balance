@@ -45,7 +45,7 @@ export default function Integrativa() {
         {...motionProps}
         className='integrativa-title'
       >
-        Nutrición Integrativa
+        Nutrición Funcional Integrativa
       </motion.h2>
       <ul className='integrativa-grid'>
         {listItems.map((item, index) => (

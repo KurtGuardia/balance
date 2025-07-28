@@ -24,7 +24,7 @@ export default function Process() {
     >
       <h2>Proceso de atención</h2>
       <p className='pill'>
-        Un proceso de 8 semanas en el que te acompaño a
+        Acompañamiento de 8 semanas en el que te acompaño a
         sanar tu digestión, liberarte de la hinchazón y
         reconectar con tu bienestar físico y emocional —
         desde la <b>Nutrición Funcional Integrativa</b> y la
@@ -85,7 +85,9 @@ export default function Process() {
       </div>
 
       <div className='process_cta'>
-        <p>¿Quieres saber si este proceso es para ti?</p>
+        <p>
+          ¿Quieres saber si este acompañamiento es para ti?
+        </p>
         <span>
           Agenda una <b>llamada gratuita de valoración</b>,
           conversamos sobre tu caso y te cuento cómo podemos

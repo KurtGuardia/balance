@@ -1,93 +1,96 @@
 @import './variables.scss';
 
 .integrativa {
+  @include bp($md) {
+    margin-top: 50px;
+  }
 
-    &-grid {
-        display: grid;
-        grid-gap: 120px;
+  &-grid {
+    display: grid;
+    grid-gap: 120px;
+
+    @include bp($md) {
+      gap: 50px;
+      padding: 0 10px;
+    }
+
+    @include bp($sm) {
+      text-align: center;
+      gap: 20px;
+      padding-left: 0;
+    }
+
+    &-pair {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      grid-template-rows: 1fr;
+      grid-template-columns: auto;
+
+      @include bp($md) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      & > * {
+        width: 80%;
 
         @include bp($md) {
-            gap: 50px;
-            padding: 0 10px;
+          grid-column: 1 !important;
+        }
+
+        @include bp($xl) {
+          width: 90%;
+        }
+      }
+
+      &--text {
+        grid-column: 2;
+
+        @include bp($xl) {
+          font-size: 24px;
+        }
+
+        @include bp($md) {
+          grid-row: 1;
         }
 
         @include bp($sm) {
-            text-align: center;
-            gap: 20px;
-            padding-left: 0;
+          font-size: 18px;
         }
+      }
 
-        &-pair {
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            grid-template-rows: 1fr;
-            grid-template-columns: auto;
+      &--img {
+        grid-column: 1;
+        border-radius: 15px;
 
-            @include bp($md) {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            &>* {
-                width: 80%;
-
-                @include bp($md) {
-                    grid-column: 1 !important;
-                }
-
-                @include bp($xl) {
-                    width: 90%;
-                }
-            }
-
-            &--text {
-                grid-column: 2;
-
-                @include bp($xl) {
-                    font-size: 24px;
-                }
-
-                @include bp($md) {
-                    grid-row: 1;
-                }
-
-                @include bp($sm) {
-                    font-size: 18px;
-                }
-            }
-
-            &--img {
-                grid-column: 1;
-                border-radius: 15px;
-
-                @include bp($md) {
-                    grid-row: 2;
-                    width: 70%;
-                }
-            }
+        @include bp($md) {
+          grid-row: 2;
+          width: 70%;
         }
-
-        &-pair:nth-child(even) {
-            .integrativa-grid-pair--text {
-                grid-column: 1;
-                grid-row: 1;
-            }
-
-            .integrativa-grid-pair--img {
-                grid-column: 2;
-            }
-        }
-
-        // the brain-gut img
-        &-pair:nth-child(3) {
-            .integrativa-grid-pair--img {
-                width: 300px;
-
-                @include bp($sm) {
-                    width: 150px;
-                }
-            }
-        }
+      }
     }
+
+    &-pair:nth-child(even) {
+      .integrativa-grid-pair--text {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .integrativa-grid-pair--img {
+        grid-column: 2;
+      }
+    }
+
+    // the brain-gut img
+    &-pair:nth-child(3) {
+      .integrativa-grid-pair--img {
+        width: 300px;
+
+        @include bp($sm) {
+          width: 150px;
+        }
+      }
+    }
+  }
 }

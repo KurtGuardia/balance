@@ -62,7 +62,6 @@
     &-item {
       position: relative;
       padding-left: 20px;
-      margin: 10px 0;
 
       &:before {
         content: '✓';
@@ -72,6 +71,10 @@
         font-size: 1.2em;
         font-weight: bold;
       }
+    }
+
+    &-item + &-item {
+      margin-top: 10px;
     }
   }
 

@@ -1,174 +1,185 @@
 @import './variables.scss';
 
 .me {
-    @include flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 0 100px;
-    margin-top: 150px;
+  @include flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0 100px;
+  margin-top: 150px;
 
-    @include bp($lg) {
-        align-items: center;
+  @include bp($lg) {
+    align-items: center;
+  }
+
+  @include bp($md) {
+    padding: 0 50px;
+    gap: 20px;
+  }
+
+  @include bp($sm) {
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  &_presentation {
+    @include flex;
+    gap: 50px;
+    align-items: stretch;
+
+    @include bp($sm) {
+      flex-direction: column-reverse;
+    }
+
+    &_picture {
+      @include flex;
+      flex-direction: column;
+      justify-content: end;
+
+      & .picture {
+        width: 70%;
+        border-radius: 25px;
+
+        @include bp($md) {
+          width: 100%;
+        }
+
+        @include bp($sm) {
+          width: 50%;
+        }
+      }
+
+      & .firma {
+        align-self: flex-end;
+        width: 35%;
+      }
+    }
+
+    &_msg {
+      @include flex;
+      gap: 20px;
+      flex-direction: column;
+      font-size: 32px;
+
+      @include bp($xl) {
+        font-size: 24px;
+      }
+
+      &-quote {
+        font-weight: bold;
+        color: $primary-color;
+        text-align: center;
+        margin: -10px auto;
+
+        @include bp($md) {
+          margin: 20px 0;
+        }
+      }
+
+      &-text {
+        background-color: $beige;
+        padding: 20px 40px;
+        width: fit-content;
+        margin: auto;
+        border-radius: 15px;
+
+        li + li {
+          margin-top: 1rem;
+
+          @include bp($xl) {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &_content {
+    &-title {
+      cursor: pointer;
+      text-align: left;
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+
+      @include bp($xl) {
+        font-size: 20px;
+      }
+
+      @include bp($sm) {
+        font-size: 16px;
+      }
     }
 
     @include bp($md) {
-        padding: 0 50px;
-        gap: 20px;
+      &-text {
+        margin: 0 15px;
+      }
+    }
+  }
+
+  &_areas {
+    width: 100%;
+    @include flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+    @include bp($xl) {
+      gap: 0;
     }
 
-    @include bp($sm) {
-        margin-top: 50px;
+    @include bp($md) {
+      flex-direction: column;
+      margin-top: 10px;
     }
 
-    &_presentation {
-        @include flex;
-        gap: 50px;
-        align-items: flex-start;
+    &_area {
+      width: 50%;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-        @include bp($sm) {
-            flex-direction: column-reverse;
-        }
+      @include bp($lg) {
+        padding: 10px 0;
+      }
 
-        &_picture {
-            @include flex;
-            flex-direction: column;
+      @include bp($md) {
+        width: auto;
+      }
 
-            & img {
-                width: 80%;
-                border-radius: 25px;
-
-                @include bp($md) {
-                    width: 100%;
-                }
-
-                @include bp($sm) {
-                    width: 50%;
-                }
-            }
-        }
-
-        &_msg {
-
-            &-quote {
-                font-weight: bold;
-                font-size: 32px;
-                color: #92A28E;
-                text-align: center;
-                width: 70%;
-                margin: auto;
-                padding: 50px 0;
-
-                @include bp($xl) {
-                    padding: 0;
-                    font-size: 24px;
-                    margin-top: 60px;
-                }
-
-                @include bp($md) {
-                    width: unset;
-                    margin: 20px 0;
-                }
-            }
-
-            &-name {
-                text-align: center;
-                margin: auto;
-
-                @include bp($md) {
-                    margin: 15px 0;
-                }
-
-                & p {
-                    color: $black;
-                }
-            }
-        }
-    }
-
-    & p:first-of-type {
-
-        & span {
-            color: $dark-green;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 90%;
-            letter-spacing: -1px;
-        }
-    }
-
-    &_areas {
-        width: 100%;
-        @include flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 20px;
+      &-title {
+        font-weight: bold;
+        margin: 0 0 20px;
+        width: fit-content;
 
         @include bp($xl) {
-            gap: 0;
-        }
-
-        @include bp($md) {
-            flex-direction: column;
+          font-size: 24px;
         }
 
         @include bp($sm) {
-            padding: 0 20px;
+          font-size: 20px;
+        }
+      }
+
+      &-text {
+        margin: 0 15px;
+      }
+
+      & img {
+        width: 30%;
+
+        @include bp($md) {
+          width: 40%;
         }
 
-        &_area {
-            width: 50%;
-            text-align: justify;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            @include bp($lg) {
-                padding: 10px 0;
-            }
-
-            @include bp($md) {
-                width: auto;
-            }
-
-            &-title {
-                font-weight: bold;
-                margin: 0 0 20px;
-                width: fit-content;
-
-                @include bp($xl) {
-                    font-size: 24px;
-                }
-
-                @include bp($sm) {
-                    font-size: 20px;
-                }
-            }
-
-            &-text{
-
-                & span {
-                    color: $dark-green;
-                    font-weight: bold;
-                    cursor: pointer;
-                    font-size: 90%;
-                    letter-spacing: -1px;
-                }}
-
-            & img {
-                width: 30%;
-
-                @include bp($md) {
-                    width: 40%;
-                }
-
-                @include bp($sm) {
-                    width: 60%;
-                }
-            }
-
-            & b {
-                cursor: pointer;
-            }
+        @include bp($sm) {
+          width: 60%;
         }
+      }
     }
+  }
 }
