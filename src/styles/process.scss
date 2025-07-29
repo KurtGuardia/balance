@@ -85,6 +85,15 @@
     }
   }
 
+  &_quote {
+    display: none;
+
+    @include bp($sm) {
+      display: block;
+      color: $primary-color !important;
+    }
+  }
+
   @include bp($md) {
     padding: 0 40px;
   }

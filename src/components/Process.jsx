@@ -61,7 +61,7 @@ export default function Process() {
             {...hoverAnimation}
           >
             <b>Apoyos naturales</b>{' '}
-            (suplementos/fisioterapia) estrategias para
+            (suplementos/fitoterapia) estrategias para
             equilibrar tu microbiota, regular tu{' '}
             <b>sistema digestivo y nervioso.</b>
           </motion.li>
@@ -106,6 +106,11 @@ export default function Process() {
           Es un espacio para resolver tus dudas y conocer tu
           caso🌷
         </span>
+        <p className='process_quote'>
+          “Estoy aquí para acompañarte a recuperar tu
+          digestión y volver a habitar tu cuerpo con calma y
+          confianza.” 🤍
+        </p>
       </div>
     </motion.div>
   )

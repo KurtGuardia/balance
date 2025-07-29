@@ -74,6 +74,10 @@
         @include bp($md) {
           margin: 20px 0;
         }
+
+        @include bp($sm) {
+          display: none;
+        }
       }
 
       &-text {
