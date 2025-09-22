@@ -85,7 +85,7 @@ export default function Landing() {
               repeatType: 'reverse',
             },
           }}
-          href='https://wa.me/34634150027?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20agendar%20una%20valoración%20gratuita%2C%20por%20favor:'
+          href='https://wa.me/34722541581?text=Hola Victoria,%20me%20interesa%20el%20servicio%20de%20nutrición%20integrativa%20que%20ofreces,%20quisiera%20agendar%20una%20valoración%20gratuita%2C%20por%20favor:'
           target='_blank'
           rel='noreferrer'
           title='Click y envíame un mensaje en Whatsapp'
